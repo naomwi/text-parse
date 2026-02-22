@@ -1,0 +1,11 @@
+output/
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.claude/
+debug_*.py
+check_text.py
+log.txt
+nul
