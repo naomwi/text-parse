@@ -16,8 +16,8 @@ TEMP_PROFILE_DIR = OUTPUT_DIR / "temp_profile"
 
 # --- Gemini ---
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_MODEL = "gemini-2.0-flash"
-GEMINI_TRANSLATION_MODEL = "gemini-2.0-pro-exp-02-05"
+GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_TRANSLATION_MODEL = "gemini-2.5-pro"
 
 # --- Extraction ---
 MAX_CHAPTERS = 50
@@ -32,17 +32,32 @@ SCROLL_STEP_PX = 500
 SCROLL_DELAY_MS = 100
 LOADING_TIMEOUT_MS = 15000
 
-# --- Browser ---
+# --- Browser (Global Site) ---
 CDP_ENDPOINT = "http://127.0.0.1:9222"
 NOVELPIA_VIEWER_URL_PATTERN = "global.novelpia.com/viewer"
 
-# --- DOM Selectors ---
+# --- DOM Selectors (Global Site) ---
 SEL_VIEWER_CONTENTS = "div.viewer-contents"
 SEL_VIEWER_WRAPPER = "div.viewer-contents-wrapper"
 SEL_NAV_BUTTONS = "div.viewer-bottom div.viewer-btn"
 SEL_LOADING_VIEW = ".loading-view"
 SEL_STICKY_BOTTOM = "div.viewer-bottom"
 SEL_STICKY_HEADER = "div.viewer-header-container"
+
+# --- Browser & Selectors (Main Site) ---
+NOVELPIA_MAIN_URL_PATTERN = "novelpia.com/viewer"
+NOVELPIA_SERIES_URL_PATTERN = "novelpia.com/novel/"
+NOVELPIA_API_EPISODE_LIST = "https://novelpia.com/proc/episode_list"
+
+SEL_MAIN_NOVEL_DRAWING = "#novel_drawing"
+SEL_MAIN_FONT_LINE = "#novel_drawing font.line"
+
+# --- Browser & Selectors (Pixiv) ---
+PIXIV_NOVEL_URL_PATTERN = "pixiv.net/novel/show.php"
+PIXIV_SERIES_URL_PATTERN = "pixiv.net/novel/series/"
+PIXIV_API_NOVEL = "https://www.pixiv.net/ajax/novel/{}"
+PIXIV_API_SERIES = "https://www.pixiv.net/ajax/novel/series/{}"
+PIXIV_API_SERIES_CONTENT = "https://www.pixiv.net/ajax/novel/series/{}/content_titles?limit=100&last_order=0&order_by=asc"
 
 # --- Local OCR ---
 OCR_LANGUAGES = ["en"]

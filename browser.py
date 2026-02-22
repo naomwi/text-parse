@@ -22,11 +22,14 @@ from config import (
     LOADING_TIMEOUT_MS,
     MIN_NAV_DELAY,
     MAX_NAV_DELAY,
-    NOVELPIA_VIEWER_URL_PATTERN,
+    NOVELPIA_MAIN_URL_PATTERN,
+    PIXIV_NOVEL_URL_PATTERN,
+    PIXIV_SERIES_URL_PATTERN,
     SCROLL_DELAY_MS,
     SCROLL_STEP_PX,
     SEL_LOADING_VIEW,
     SEL_VIEWER_CONTENTS,
+    SEL_MAIN_NOVEL_DRAWING,
 )
 
 logger = logging.getLogger(__name__)
@@ -204,11 +207,14 @@ async def connect_cdp(endpoint: str = CDP_ENDPOINT) -> tuple[Browser, Page]:
             f"Cannot connect to Chrome at {endpoint}. Error: {e}"
         ) from e
 
-    # Find the Novelpia viewer tab
+    # Find the Novelpia/Pixiv viewer tab
     for context in browser.contexts:
         for page in context.pages:
-            if NOVELPIA_VIEWER_URL_PATTERN in page.url:
-                logger.info(f"Found Novelpia tab: {page.url}")
+            if (NOVELPIA_VIEWER_URL_PATTERN in page.url or 
+                NOVELPIA_MAIN_URL_PATTERN in page.url or
+                PIXIV_NOVEL_URL_PATTERN in page.url or
+                PIXIV_SERIES_URL_PATTERN in page.url):
+                logger.info(f"Found target tab: {page.url}")
                 await page.bring_to_front()
                 return browser, page
 
@@ -276,13 +282,24 @@ async def launch_persistent(
     page = context.pages[0] if context.pages else await context.new_page()
 
     if start_url:
-        await page.goto(start_url, wait_until="domcontentloaded")
-
+        logger.info(f"Navigating to {start_url}")
+        # Add a longer timeout and handle errors gracefully since Novelpia main can be slow
+        try:
+            await page.goto(start_url, wait_until="domcontentloaded", timeout=60000)
+        except Exception as e:
+            logger.warning(f"Navigation to start URL timed out or failed: {e}")
+            
     return context, page
 
 
 async def wait_for_page_ready(page: Page) -> None:
     """Wait for the loading indicator to disappear and content to be visible."""
+    
+    # Pixiv doesn't use the Novelpia specific loading elements
+    if PIXIV_NOVEL_URL_PATTERN in page.url or PIXIV_SERIES_URL_PATTERN in page.url:
+        await asyncio.sleep(1) # Just give a brief moment for the page to settle
+        return
+
     try:
         await page.wait_for_selector(
             SEL_LOADING_VIEW, state="hidden", timeout=LOADING_TIMEOUT_MS
@@ -291,11 +308,12 @@ async def wait_for_page_ready(page: Page) -> None:
         pass  # loading-view may not exist on this page
 
     try:
+        selector = SEL_MAIN_NOVEL_DRAWING if NOVELPIA_MAIN_URL_PATTERN in page.url else SEL_VIEWER_CONTENTS
         await page.wait_for_selector(
-            SEL_VIEWER_CONTENTS, state="visible", timeout=LOADING_TIMEOUT_MS
+            selector, state="visible", timeout=LOADING_TIMEOUT_MS
         )
     except Exception:
-        logger.warning("viewer-contents not visible after timeout, proceeding anyway")
+        logger.warning(f"{selector} not visible after timeout, proceeding anyway")
 
     await asyncio.sleep(0.5)
 
@@ -378,9 +396,51 @@ async def get_chapter_info(page: Page) -> dict:
             info.update(state)
             return info
     except Exception as e:
-        logger.debug(f"State extraction failed: {e}")
+        logger.debug(f"State extraction (Global) failed: {e}")
 
-    # Fallback: parse episode_no from URL
+    # Fallback 1: Extract from Main Novelpia DOM (novelpia.com)
+    try:
+        # Check if we are on the main site
+        if NOVELPIA_MAIN_URL_PATTERN in page.url:
+            # 1. Episode ID from URL or hidden input
+            match = re.search(r"/viewer/(\d+)", page.url)
+            if match:
+                info["episode_no"] = match.group(1)
+
+            # 2. Next episode ID from input containing the current URL pattern
+            # Novelpia main uses inputs like <input type="hidden" value="/viewer/1114460">
+            next_input = await page.evaluate(r"""() => {
+                // Find all inputs that start with /viewer/ and return the first one that is NOT the current episode
+                const inputs = Array.from(document.querySelectorAll('input[type="hidden"]'));
+                for (const input of inputs) {
+                    const val = input.value;
+                    if (val && val.startsWith('/viewer/')) {
+                        const nextId = val.split('/').pop();
+                        // Assuming current ID is elsewhere in the DOM or URL
+                        const currentId = window.location.pathname.split('/').pop();
+                        if (nextId && nextId !== currentId) {
+                            return nextId;
+                        }
+                    }
+                }
+                return null;
+            }""")
+            if next_input:
+                info["next_episode_no"] = next_input
+
+            # 3. Episode Title
+            title_text = await page.evaluate("""() => {
+                const line1 = document.querySelector('font.line[data-line="1"]');
+                return line1 ? line1.innerText.trim() : document.title;
+            }""")
+            info["epi_title"] = title_text
+            
+            return info
+            
+    except Exception as e:
+        logger.debug(f"Main site DOM extraction failed: {e}")
+
+    # Fallback 2: parse episode_no from URL (if all else fails)
     try:
         match = re.search(r"/viewer/(\d+)", page.url)
         if match:
@@ -403,9 +463,20 @@ async def navigate_next_chapter(page: Page) -> bool:
     next_ep = chapter_info.get("next_episode_no")
 
     if next_ep:
-        next_url = f"https://global.novelpia.com/viewer/{next_ep}"
+        if NOVELPIA_MAIN_URL_PATTERN in page.url:
+            next_url = f"https://novelpia.com/viewer/{next_ep}"
+        else:
+            next_url = f"https://global.novelpia.com/viewer/{next_ep}"
+            
         logger.info(f"  Navigating to next chapter via URL: {next_url}")
-        await page.goto(next_url, wait_until="domcontentloaded")
+        
+        # Wait for the page to navigate and fully replace its DOM
+        try:
+            await page.goto(next_url, wait_until="domcontentloaded")
+            await page.wait_for_load_state("networkidle", timeout=10000)
+        except Exception:
+            pass # Timeout on network idle is okay as long as DOM changed
+            
         delay = random.uniform(MIN_NAV_DELAY, MAX_NAV_DELAY)
         await asyncio.sleep(delay)
         await wait_for_page_ready(page)
@@ -427,7 +498,14 @@ async def navigate_next_chapter(page: Page) -> bool:
             logger.info("  Next button is disabled — end of available chapters")
             return False
 
-        await next_btn.click()
+        # Wait for the navigation to trigger
+        try:
+            async with page.expect_navigation(wait_until="domcontentloaded", timeout=10000):
+                await next_btn.click()
+            await page.wait_for_load_state("networkidle", timeout=10000)
+        except Exception as e:
+            logger.warning(f"  Wait for navigation state timed out, continuing: {e}")
+
         delay = random.uniform(MIN_NAV_DELAY, MAX_NAV_DELAY)
         await asyncio.sleep(delay)
         await wait_for_page_ready(page)
