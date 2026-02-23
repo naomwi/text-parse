@@ -1,0 +1,219 @@
+<20 - Follow Me, Trust Me>
+
+"Before we begin the exam, I'll activate the detection equipment to track your positions and evaluate your performance. Everyone, please take out your tickets and place them on your wrists."
+
+The tickets began to squirm and take shape, then hardened like metal rings and wrapped around our wrists.
+
+"This is the Ticket Watch that will assist in your evaluation. The Ticket Watch will send a rescue signal to the nearest judge if the wearer sustains life-threatening injuries that prevent them from continuing the exam."
+
+Of course, if you rely solely on that, you might end up dead.
+It said it sends a rescue signal, not that it saves your life.
+Moreover, this watch has a blind spot.
+What if the wrist or arm wearing the watch gets cut off?
+Then you could die without anyone knowing, and they might not even recover your body.
+
+"Therefore, participants should pay close attention to their own safety, and if you determine that continuing the exam is too risky, please declare your 'withdrawal' immediately."
+"Since you all are participating with at least a Gold Ticket, even if you withdraw or fail this advanced exam, you can still take the basic exam."
+"Similarly, Platinum Ticket holders can take the intermediate final exam in exchange for losing their platinum privileges."
+
+Wow, that's crazy.
+I didn't know there was such a safety net?
+Honestly, I'm surprised.
+I've often wondered about characters who suddenly appear in lower classes after failing exams, and now I know there's such a mechanism.
+As someone who always passed the advanced exams with superior specs and veteran knowledge, I never knew about this feature.
+
+'Now that this is reality, they're surprisingly generous with information.'
+
+Monk Myungho announced the final precautions.
+
+"This exam is solely to identify advanced students for the Gift Academy. Combat between participants is permitted, but if deaths occur, the responsible examinee will receive severe penalties."
+"If excessive killing is detected, judges may arbitrarily revoke qualification, and re-application will be impossible for up to three years."
+
+These are actually pretty obvious warnings.
+Don't put children in washing machines.
+Don't feed chocolate to dogs.
+Don't iron your thighs.
+Just common sense stuff.
+But the sensibilities of this game are closer to American than Korean.
+The reason for these seemingly obvious regulations is that they've all actually happened before.
+
+'In playthroughs during the war generation, things happen that this monk couldn't even imagine.'
+
+Fortunately, looking at the participants, this doesn't seem to be such a harsh generation.
+When war breaks out, certain main and supporting characters don't appear in the academy entrance exam.
+Since the Northern Grand Duchess is here, there's no "Early Demon Invasion" regional event, and since Xing the swordsman from the Eastern Empire is participating, there's no "Eastern Empire Invasion" regional event either.
+I've also confirmed key NPCs from the West, so there's no "Western Civil War," and I've seen key NPCs from the South, so there's no "South Sea Pirate King's Attack" either. It's a clean playthrough all around.
+
+"Now I will begin the first trial."
+
+In short, it's a playthrough without any main character disadvantages.
+All I need to do is perform well.
+
+
+* * *
+
+
+<First Trial: Stone Tower Building Event>
+Build as many stone towers as possible!
+Time limit: 6 hours.
+Building towers isn't difficult, but protecting them until the end of the exam is another matter.
+Whether you protect your tower, destroy others' towers, or secretly build towers, how you approach the exam is up to you!
+Challenge the first trial in your own way.
+
+I think entrance exams are tests of humanity.
+There are people in the world who enjoy seeing others fail more than succeeding themselves.
+It's difficult and hard to do well yourself.
+Because you have to put in effort.
+It's easy to ruin others.
+Because you can easily destroy with just violence.
+The role of law is to protect hardworking people from such violence, but unfortunately, the entrance exam site is extraterritorial.
+It's not protected by any country's laws.
+In other words, it's perfect for trolls to run wild.
+
+"It's Northern Grand Duchess Irene!"
+"That stuck-up girl rejected our faction's invitation, didn't she?"
+"Let's teach her a lesson."
+
+Named NPCs usually have many enemies.
+Northern Grand Duchess Irene is particularly so due to her cold nature and haughty attitude.
+Troublemakers quickly appeared, throwing stones at the stone tower Irene was building.
+
+Crack
+Crack crack
+
+"Huh?"
+"What?"
+"The, the stones froze in mid-air?"
+
+The monkey beastman Son O-cheon exclaimed "Oh" in admiration.
+I pulled at his trouser leg.
+
+"What are you standing there for? We need to run away quickly."
+"You're such a scaredy-cat, Little Mouse. Aren't you curious? About the skills of possibly the strongest person among this year's applicants."
+"You mean the New Generation Top 3."
+
+Gisele showed off his knowledge.
+
+"Northern Grand Duchess Irene, who experienced war with northern tribes since childhood. Holy Knight Jaidas, famous throughout the three western countries. Heather's son from the south, Hector."
+"Are they stronger than me?"
+"I don't know how skilled you are, Son O-cheon, but neither would be easy opponents."
+
+Ah, whatever.
+I said.
+
+"Hmm? Is it getting colder?"
+"Oh, my. The sky! Look at the sky!"
+
+Gisele finally noticed something strange.
+The dew on the trees had frozen into icicles.
+The icicles broke off and became ice spikes, which lined up and pointed their sharp edges toward those who had attacked her stone wall.
+
+"Run away!"
+"Ahhh, we didn't attack you!"
+"Don't come this way, you crazy fools!"
+
+Unfortunately, the examinees who had provoked Irene fell one after another, bleeding from the attack of ice spikes they couldn't possibly all dodge.
+Those who hid among the crowd barely avoided injury, but those caught up in the commotion wouldn't let it slide.
+
+"You crazy bastard, what do you think you're doing!"
+"We almost got disqualified too!"
+
+Competition requires matching levels to even attempt, and before the Northern Grand Duchess, an active military mage, everyone was afraid and desperate not to catch her eye.
+The young masters and misses who didn't understand the difference in level and acted arrogantly mostly failed, either from the ice spikes or from attacks by others who were almost disqualified because of them.
+
+"That's damn cold."
+"Wait, you blocked it with your body?"
+
+Son O-cheon, true to his reputation as a brute monkey beastman, blocked most of the spikes with his spear, but one spike he couldn't block, he just took with his body.
+While others were suffering penetrating wounds or worrying about frostbite around their wounds, he only had a thin layer of ice on his skin.
+His toughness is truly admirable.
+
+"What's that cloak?"
+"It's a marvel of civilization. It's called a cold-resistant cloak, optimized to block cold attribute attacks."
+"Wait, you're taking the exam with equipment advantage?"
+"There's no rule against using equipment to your advantage."
+"That's so unfair."
+
+Gisele and Son O-cheon bickered while looking around.
+
+"By the way, where did Little Mouse go?"
+"Miss Oknodie. Are you there?"
+"I'm here."
+
+I poked my head out at the voices calling for me.
+
+[You avoided the area attack by hiding under tree roots.]
+[Hiding experience +3]
+[Quick Movement experience +1]
+
+When I crawled out from under the tree roots at their call, I received incredulous looks.
+
+"What are you, some kind of mole person?"
+"My goodness. You were right beside us until the ice started flying. When did you hide under there? Your hiding skills are truly remarkable."
+"It's thanks to my usual practice."
+
+All that diligent hiding here and there has paid off.
+The hiding skill really is the best value.
+If you develop it, it never betrays you.
+
+"...Usual practice?"
+"I often hide in various places in preparation for times like this."
+"What kind of times are you referring to?"
+"Why ask such an obvious question? Like when being bombarded by magic, or chased by killers?"
+"So, at your age, barely ten if that, you've been practicing hiding from killers and magic bombardments in your daily life?"
+"Hey, I'm not ten years old! If you knew my real age, you'd be shocked."
+
+I'm actually over twenty years old.
+My words seemed so unbelievable that Gisele just opened and closed his mouth before finally pressing his forehead with his hand.
+
+"I have so many things I want to say to that butler and maid."
+"Why?"
+"It's nothing. Let's leave before we get attacked."
+
+Irene looked around with cold eyes, as if daring anyone to try something.
+No one wanted to catch her attention.
+
+'Damn. I'll have to give up on that challenge quest.'
+
+By the way, a Stat Stone appears with 100% probability at the top of the stone tower Irene builds.
+It's a rare guaranteed Stat Stone, but unless you have a Northern-related starting point, you can't even approach it.
+It would be crazy to loiter around one of the New Generation Top 3 who could wipe out dozens of examinees alone without even knowing them.
+
+"This area is occupied by our Western Mercenary Alliance. Leave if you don't want to get hurt."
+"We have no intention of accepting country bumpkins who haven't made a name as noble families into our Noble Alliance. Just move along."
+
+Other areas around were also occupied by people who had been driven away by Irene.
+The majority alliances at least gave warnings, but the minority of strong individuals didn't even bother with that.
+
+"Isn't a blockhead also a stone? Is it? Isn't it?"
+"Ahhh, he's crazy!"
+"Don't run away, just stay still."
+
+A lunatic trying to use normal people as stone tower materials.
+
+"If I knock everyone down, there won't be anyone to interfere."
+"Please! We're not interested in you!"
+
+An aggressive spearman attacking every examinee nearby.
+All kinds of violent people were running wild.
+
+"Is it really necessary to climb up the mountain? That's so annoying to my pride. The grouped ones look easy, and I want to fight the ones who are alone."
+
+Son O-cheon seemed uncomfortable with the idea of climbing the mountain.
+It was already impressive that someone so aggressive he'd even pick a fight with Advanced Examiner Michael had held back this far.
+He had fled from Northern Grand Duchess Irene's area attack with an "Ah, this is a bit much" look, but he seemed to find it beneath his dignity to face the others.
+
+"Trust me and follow me. Most of the stones available at the base of the mountain are just pebbles."
+
+Strong individuals or large groups confident in their numbers had settled at the foot of the rocky mountain, while weaker individuals or smaller groups climbed up.
+However, climbing the mountain isn't necessarily always a disadvantage.
+
+"Don't underestimate the advanced exam. Do you think they'd make an academy entrance exam where you just guard your spot and build a stone tower anywhere?"
+
+This event.
+There's a huge surprise event hidden that first-time NPC players wouldn't know about.
+
+'It was five hours later, right?'
+
+Stone tower building event on a rocky mountain.
+Here, an avalanche occurs one hour before the end of the exam.

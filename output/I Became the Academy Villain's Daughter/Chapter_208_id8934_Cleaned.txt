@@ -1,0 +1,285 @@
+# Functional Window and Status Window
+
+━━━
+【Function (Summary) Window】
+Total 3931 - A mischievous genius with extraordinary talent
+━━━
+Physical 463 (Talented) - Budding strength. Day by day, her body embodies the meaning of human strength.
+Martial Arts 638 (Gifted) - One in a million. Shows remarkable growth with skills improving from morning to evening.
+Social 455 (Talented) - Fearsome social butterfly. Regardless of truth, bad rumors make it difficult for the weak to befriend her.
+Mental 1132 (Gifted) - A monster who knows no despair. If there are two types of people in the world—those who despair and those who cause others to despair—she clearly belongs to the latter.
+Magic 157 (Proficient) - Lazy genius. She uses magic so rarely compared to her talent that she hasn't seen her true capabilities.
+Mischief 1351 (Gifted) - Oknodie, the prankster extraordinaire. When it comes to mischievous schemes, there's nothing she can't do.
+Living 92 (Proficient) - Owner of slightly superior survival skills. Despite her current ordinary level of just living because she was born, she shows unusual collecting abilities.
+Destiny 83 (Proficient) - Crossroads. The wheel of fate is gradually rolling toward her.
+━━━
+
+The Talent Assessment Hat knows. Function levels are determined by the total score in each section.
+
+5 or below is Fool.
+Illiterate, not a shred of talent, absolute weakness.
+A field that will hold you back forever.
+Between 6 and 20 is Dull.
+Worse than average, fatal disqualification, weakness.
+A field with significant deficiencies.
+Between 21 and 50 is Average.
+Average level, doing just as much as others, ordinary.
+A field at common sense level.
+
+The above three (Fool, Dull, Average) are non-specialized fields.
+Oknodie doesn't have any that fall into these categories.
+
+"She actually has talent in every field!"
+
+The Dark Aptitude Assessment Hat of Jaedan Mountain trembled its brim with intense emotion.
+And this was just the beginning.
+While other humans would consider Proficient or Talented level abilities impressive enough, those categories didn't apply to her.
+
+Between 51 and 200 is Proficient.
+Notable, talented, excellent.
+The realm of those who stand out in a field.
+
+Between 201 and 500 is Talented.
+Considerable, blooming talent, professional level.
+The realm corresponding to the prime of already recognized experts in the industry.
+
+The realm where the world's proficient individuals compete fiercely.
+Naturally, if a function's comprehensive level is at the Gifted level, it usually means excellence in one function.
+This was the realm corresponding to the average first-year students admitted to Gift Academy.
+Several areas in Oknodie's current function comprehensive level are at this stage.
+However, her growth trend was different.
+What the numbers meant was also different.
+High numbers only indicate functions she's intensively developing, but any function could rise at a frightening pace if she set her mind to it.
+
+Physical 463 (Talented), Social 455 (Talented), Magic 157 (Proficient), Living 92 (Proficient), Destiny 83 (Proficient).
+
+What would have been the end result for an ordinary aptitude assessment hat is fully visible to the Dark Aptitude Assessment Hat.
+
+Physical 463/7200 (Talented/Genius), Social 455/5500 (Talented/Genius), Magic 157/8600 (Proficient/Genius), Living 92/9999 (Proficient/Genius), Destiny 83/9999 (Proficient/Genius).
+
+An impossible talent.
+A monster with absurd potential.
+Something other than human.
+An incomprehensible being wearing a human disguise.
+That's the only way to describe such potential.
+
+Moreover, there are areas where she already shows skills beyond the Proficient and Talented realms.
+
+Between 501 and 2000 is Gifted.
+The realm of advanced classes or upper grades.
+
+2001 and above is Genius.
+The realm of professors. World-class skill.
+
+She's reaching for such extraordinary possibilities.
+The realm of the Gifted and Genius.
+Among them, three areas have already reached the Gifted realm: Martial Arts 638, Mental 1132, and Mischief 1351.
+
+━━━
+【Function (Complete) Window】
+━━━
+[Physical](463)
+*Dash dash dash(159)
+Running 50 Endurance 42 Breathing 67
+*Charge charge(53)
+Jumping 11 Climbing 13 Mountaineering 3 Hanging 6 Ascending 20
+*Hiyah!(88)
+Balance 50 Rhythm sense 32 Long jump 6
+*You're in trouble?(5)
+Charging 5
+*Sturdy(15)
+Blocking 10 Guarding 5
+*No way!(143)
+Boldness 110 Hard fighting 31 Combat endurance 2
+━━━
+[Martial Arts](638)
+*Bang bang(482)
+Acrobatics 45 Acrobatic shooting 55 Aerial shooting 55 Archery 60 Throwing 50 Reflex 33 Rapid shooting 53 Moving shooting 58 Precision 31 Projectile 42
+*Hit painfully(156)
+Swordsmanship 76 Lightning punch 10 Body techniques 70
+━━━
+[Social](455)
+*Social butterfly power(104)
+Social life 43 Charisma 61
+*Your price is(298)
+Emotion 33 Persuasion 95 Discernment 56 Speech 38 Intimidation 41 Bargaining 35
+*Play with me!(53)
+Taming 3 Crying sounds 25 Cute acting 8 Mimicry 17
+━━━
+[Mental](1132)
+*Playing well alone(73)
+Solo activity 30 Playing alone 43
+*Let me guess(483)
+Situation awareness 95 Thinking ability 85 Willpower 60 Psychological prediction 68 Behavior prediction 131 Strategy planning 44
+*Focus!(281)
+Sensory focus 46 Detection 5 Magic detection 23 Memorization 47 Memory power 43 Mental power 50 Concentration 66 Super concentration 1
+*This is how you do it. Got it?(96)
+Education 45 Perfection 1 Writing 50
+*I won't cry(199)
+Pain resistance 55 Poison detection 31 Poison resistance 31 Curse resistance 41 Endurance 41
+━━━
+[Magic](157)
+*I learned from the basics(123)
+Mana technique 3 Mana control 40 Mana breathing 5 Magic theory 75
+*Kwang time of darkness(34)
+Skeleton creation 1 Dark magic 5 Dark tonic creation 12 Dark electricity generation 3 Dark thorn vine root creation 15 Pitch-black coating 3
+━━━
+[Mischief](1351)
+*Rawr scary(126)
+Fear inducing 86 Intimidation 40
+*Where am I(257)
+Hiding 201 Dark vision 15 Night action 20 Night-prowling 7 Stealth 14
+*Where are you?(678)
+Detection 43 Vigilance 31 Synesthesia 2 Observation 220 Vision 48 Swift movement 36 Swift reconnaissance 31 Tracking 44 Terrain analysis 34 Intuition 31 Finding 53 Hearing 51 Pursuit 54
+*Hehe fooled you(92)
+Evasion 25 Deception 32 Acting 35
+*Hide here!(1)
+Concealing 1
+*I'll steal it(207)
+Lock picking 56 Infiltration 65 Stealth movement 1 Stealing 85
+━━━
+[Living](92)
+*Clean(5)
+Cleaning 5
+*All mine!(70)
+Gathering 20 Exploration 50
+*Earth is my friend(9)
+Digging 9
+*I can make anything well(5)
+Drug manufacturing 5
+*I'll make it like this(3)
+Structure design 3
+━━━
+[Destiny](83)
+*Good child(46)
+Good child 46
+*Bad child(17)
+Bad child 17
+*Beloved child(20)
+Protection inducing 20
+━━━
+
+Looking at the details makes it even more impressive.
+Usually, function experience shows a person's lifetime.
+If breeding experience is highest, they're a breeder.
+If breeding is high along with physical functions, they're a monster breeder.
+If villainy and acting are also high, they might be an evil monster breeder who deceives their own kind to feed them to monsters.
+
+Such speculation is impossible with Oknodie.
+There's just too much.
+She's on a completely different level from Foundation scholarship students who focus on developing only the minimum necessary functions.
+Such diverse functions, like a noble.
+To the untrained eye, she would truly appear to be a child of nobility, even high nobility.
+
+[Dark Talent Assessment]
+[Potential levels are displayed.]
+
+━━━
+【Function (Summary) Window】
+Total 3931/68297 - Possessor of divine-class potential. If desired, she could aspire to the ranks of major deities.
+━━━
+Physical 463/7200 (Talented/Genius) - Indestructible. Possessor of talent to become the strongest human in the mortal realm.
+Martial Arts 638/8800 (Gifted/Genius) - Heavenly martial body. Possessor of talent to become the strongest swordsman in the mortal realm.
+Social 455/5500 (Talented/Genius) - Emperor's appearance. The face of one who could become a king of a nation.
+Mental 1132/8200 (Gifted/Genius) - Sage's appearance. Mental strength that won't bow to supernatural intelligence.
+Magic 157/8600 (Proficient/Genius) - Pioneer of magic. A founder who can establish her own school and theory.
+Mischief 1351/9999 (Gifted/Genius) - Joker. Her future is unpredictable.
+Living 92/9999 (Average/Genius) - Nature. The world loves her.
+Destiny 83/9999 (Proficient/Genius) - Owner of the divine seat. Can sprout a new divinity.
+━━━
+
+Even the gods have noticed her abnormality and have begun arbitrarily twisting her path to make it lean toward good or evil.
+But this child's even more frightening future is hidden in her status window.
+
+━━━
+【Status Window】
+[Name] Oknodie
+Gender - Female/?-gender
+Age - 11 years old/?????years old
+[Occupation]
+Main - Dark Princess (1st likely candidate)
+Sub - Magic Swordsman (2nd likely candidate)
+[Abilities]
+Strength 39 (109/114 points, 5 points until increase)
+Vitality 39 (112/114 points, 2 points until increase)
+Agility 49 (141/180 points, 39 points until increase)
+Intelligence 49 (147/180 points, 33 points until increase)
+Magic Power 39 (104/114 points, 10 points until increase)
+Charm 49 (175/180 points, 5 points until increase)
+[Titles & Status BEST5]
+*Threw a golem at age 11* : Proved monstrous physical ability talent at age 11.
+*Witness of nightmares* : Safely survived nightmares where people died like ants.
+*Experiencer of apocalypse* : Witnessed the moment of doom multiple times in worlds heading toward destruction.
+*Guide of salvation* : After saving worlds heading toward destruction multiple times, you have become the hope of the world.
+*Infinite respect (blessing)* : When the blessing is activated, everything in the world expresses respect for you.
+━━━
+
+All ability scores end at 9.
+A stagnation point in growth.
+Only a large amount of ability points that increase significantly in units of 10 can bind her growth rate.
+
+"This kid, it hasn't even been a year since the last examination."
+
+She achieved this much growth in just a few months.
+This isn't something possible through effort alone.
+It's the result of having to hold back again and again from doing things she could do anytime if she wanted.
+Why did she hold back?
+At such a young age when one would want to prove their excellence.
+Why did she have to hold back?
+She probably knows it all too.
+That if the "Chairman" had realized her true talent even a little sooner, he would never have allowed her to go to the Academy.
+That she has desperately pretended to be ordinary to escape from the embrace of the Wiheomhae Foundation.
+Even with that pretense of ordinariness, she caught the Chairman's eye and entered the Academy as the Foundation's top scholarship student.
+That's the only way to think about it.
+
+"Did she deceive even Jonna's eyes? Or did he also know but keep silent?"
+
+Either way, it's unforgivable.
+This is betrayal.
+Toward the Foundation.
+Toward the Chairman.
+
+"Blame the Academy professor who brought me here."
+
+If I hadn't come, I could have remained ignorant, but I cannot remain silent after seeing this directly.
+Because "that order" has been inputted into me.
+I need to create a communication magic circle.
+I must report this fact as soon as possible.
+Fortunately, there are enough materials.
+I just need to twist some of the cursed magic circle materials that Oknodie made, used, and left over.
+
+*Scratch scratch*
+
+After two hours of effort, a large magic circle was engraved all over the floor.
+
+"The finishing touch is a magic stone..."
+
+A substance imbued with powerful mana.
+Even that is in a pouch hanging on the wall.
+In the stone pouch that the baby mandrake tried to climb up the wall all night, slipping down and giving up on grabbing.
+
+"Waah!"
+"Shut up, you thing. If you stay quiet, I'll give you a piece too."
+"Waah."
+
+The baby mandrake proudly holds up three small roots.
+
+"Hmph. I wonder who you take after to be so cunning. Fine. I'll give you three pieces."
+
+Only then does that baby parrot close its mouth.
+The aptitude assessment hat jumps up from the floor with the hand attached to it and pulls out the pouch.
+While untying the string, it felt something pulling.
+
+"!"
+
+A thread of magic power so thin that it couldn't be noticed.
+One strand of it was connected to the bed.
+The large eye attached to the hat bulged so much it seemed like it might pop out.
+Following the thread with its gaze.
+At the end of the thread was Oknodie's finger.
+And the one who received the stimulus from the pulling finger was...
+
+*Stare*
+
+She was staring with round eyes at the messy floor and its culprit.
+Like a homeowner dumbfounded after seeing a pet that turned the house into a complete mess overnight.

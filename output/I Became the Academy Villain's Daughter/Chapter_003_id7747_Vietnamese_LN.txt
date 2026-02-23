@@ -1,0 +1,1 @@
+[TRANSLATION FAILED: 'NoneType' object has no attribute 'strip']

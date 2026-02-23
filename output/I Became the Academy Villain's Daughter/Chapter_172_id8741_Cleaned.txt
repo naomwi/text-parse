@@ -1,0 +1,235 @@
+# 172 - Child Trapped in a Nightmare
+
+The Academy has items that can be obtained at specific times and places with a certain probability.
+A prime example is an item that can be acquired by drilling a hole in the tile located at the 11 o'clock direction from the entrance of the empty room below the art room, counting five tiles horizontally and seven tiles vertically, during the "Curse Commotion" weekly event before midterms.
+
+<Curse Storage Device>
+Grade - Magic Level 7
+Description - A special laser pointer that can store and fire curses below a set capacity.
+Effect 1 - Stores curses touched by the laser.
+Effect 2 - Ejects curses into spaces touched by the laser.
+
+When used in combat, it can distract enemies, and when used for training, it can automatically increase curse resistance every night. It's such a convenient device that it's known among experienced players as a must-have item whenever Curse Week arrives.
+
+'I managed to get it successfully!'
+
+This item has a 40% chance of acquisition failure.
+Usually, this spot only yields throwing weapons or materials.
+Why can't you get the item sometimes?
+I'm not curious about that.
+As long as I got the item I was looking for, why would I need to know the inner workings?
+
+"Oknodie. Don't come over here. There's an extremely suspicious curse here."
+
+While I was searching for curses, weaving between trees, Dorothy's face suddenly popped out from between the leaves nearby.
+An unusually tall tree.
+A blanket with claw marks hanging from the middle branches.
+It's the blanket used in the "Sleep Anywhere" lecture.
+What were they practicing sleeping against?
+
+"I noticed the trees in the forest behaving strangely, so I investigated and found a curse at the top of this tree."
+"Hmm. I see."
+"The tree is so tall it reaches the third-year zone. There might even be a third-year level curse."
+"Thanks, Dorothy!"
+"That's what friends are for. We help each other when things get dangerous... Aaaah!? I just told you it's dangerous! Why are you climbing up there!?"
+
+There it is.
+At the top of the tree, an ominously woven nest made of human hair and a mysterious black egg.
+It's an egg containing the "Random Nightmare Curse" that I've often seen in the game.
+
+*Click*
+
+When I pressed the button, the curse was sucked into the laser pointer.
+The nest woven from hair, the mysterious black egg, and the ominous aura hanging over the tree all disappeared into the curse storage device.
+
+"This device can remove curses!"
+"Oh... what? I thought you were about to jump into the curse saying you were going to build immunity. Even Oknodie wouldn't be that absurd, right?"
+"..."
+"Oknodie?"
+"I, I forgot my homework, so I need to go first!"
+"OKNODIE!?"
+
+I deliberately ignored Dorothy's voice calling after me as I ran away.
+
+
+* * *
+
+
+Random Nightmare Curse.
+As the name suggests, it's a curse with the properties of an "egg" whose contents are unknown.
+This curse isn't particularly popular.
+If you're lucky, it might increase a specific curse resistance you need, but it could also trigger nightmares of extreme difficulty where resistance can't be built.
+If you're unlucky, you might get hit with a high-level debilitating curse that consumes your stats to wake up, or if you encounter a curse you can't wake from with your current specs, it could lead straight to game over!
+But I have a method.
+A way to know the contents before entering the curse.
+
+"Answer, answer. What curse is inside this egg?"
+
+That's right, asking the "Answering Door"!
+
+"...Something dangerous."
+"Can't you tell me in more detail?"
+"...Don't want to."
+
+Perhaps because I've been shooting curses outside every night and haven't built rapport, the Answering Door's response was curt.
+But at this point, I don't have the confidence to build more rapport than Hestia, who works on her relationship with the door every day.
+This called for a change in approach.
+
+"If you don't tell me, I'll reveal your identity to Hestia!"
+"...That would be troublesome."
+"If you tell me, I'll let you know how to escape from there!"
+
+Getting the door to cooperate willingly, and setting up insurance so it doesn't lie and trap me in a dangerous nightmare!
+
+"...The curse in the egg is the Death Experience Curse."
+"Wow. That's an extreme curse."
+
+The Death Experience Curse requires you to experience death in your dreams a specified number of times before you can wake up.
+Of course, it's incredibly painful and agonizing, and normally, the time spent struggling not to die keeps increasing, driving people mad even in reality.
+The escape method is to simply close your eyes and die the specified number of times.
+But this method doesn't build resistance.
+It's like not building resistance to a tickling curse if you scratch yourself when tickled.
+However, what makes this curse high-level is not just the difficult escape method, but also the strict conditions for building resistance.
+
+'The way to build resistance in the Death Experience Curse is to resolve the cause of death!'
+
+In a curse where you need to die a hundred times to escape, you need to resolve the cause of death a hundred times.
+
+"...Now tell me. How to escape."
+"After I confirm your words are true!"
+
+I lay down on the bed and pulled the blanket up to my neck, tucking both hands and feet under the covers.
+
+*Knock knock*
+
+Closing my eyes and waiting until sleep comes completes the preparation!
+
+*Knock knock knock. Knock knock. Knock knock knock.*
+
+"Geez. I can't sleep with all this noise."
+"...Keep your promise."
+"I said I'll tell you after I confirm!"
+
+*Knock knock knock knock. Knock knock knock knock knock knock.*
+
+Thoroughly annoyed by the knocking on the wall, I jumped out of bed and headed to the desk.
+
+"Waaah?"
+"Mandrake. Fire a powerful 5-second wail toward the wall!"
+"WAAAAAAAAAAH!"
+
+The mandrake's powerful cry, capable of bursting human eardrums when fully grown, made the wall writhe in pain.
+
+"If you act up again, next time it'll be 10 seconds!"
+
+After establishing the hierarchy, the Answering Door finally fell silent.
+
+[You are experiencing the high-level Death Experience Curse.]
+[You cannot escape the curse until you fulfill either the escape condition or the resolution condition.]
+
+A biting wind swept across the campus.
+I could see upper-class students gathered in a lecture hall filled with an ominous atmosphere.
+
+"Hello everyone!"
+"Who is that kid?"
+"Don't know."
+
+Aggressive responses, as if all previous friendships had been reset.
+There was no sign of Gisele, Isabel, or Son O-cheon, friends I'd made in this run.
+In the place of the familiar.
+In this campus that was the same yet different, I suddenly realized.
+This is a memory from a different run.
+
+*Thud. Thud.*
+
+In the distance, someone walking down the corridor, bringing the scent of blood.
+Looking at her deranged smile and eyes filled with contempt for humanity, I called her name.
+
+"Hestia."
+
+The head of the neat-haired martial artist Lotto, wearing a headband, dropped from her hand.
+
+<Chapter 1 Main Boss>
+<Frenzied Hestia (100%)>
+
+With the familiar game screen, I understood the nightmare's gimmick.
+This is a gimmick that makes you either get killed by or kill friends with whom you have even a slight intimacy.
+The "Intimacy Adjustment" gimmick that wouldn't have appeared in low or mid-level Death Experience curses!
+
+"Hmph. How foolish."
+
+The Academy I've repeated countless times.
+The clears I've achieved over and over.
+How many battles have I not experienced in this Academy, and how many opponents have I not defeated?
+
+"It would need to be a top-tier nightmare to be worth my time."
+
+I started running to stop Hestia, who was wielding an axe.
+
+
+* * *
+
+
+Oknodie didn't show up for the lecture.
+Isabel couldn't help but worry.
+
+"Has this happened before?"
+"No. It's the first time."
+"Maybe she's off somewhere looking for some weird hidden piece or whatever?"
+
+Isabel was momentarily convinced by Son O-cheon's suggestion that it would be just like Oknodie, but Gisele disagreed.
+
+"Oknodie is not that kind of child."
+"Bookworm, how would you know that?"
+"I've observed her longer and thought about her more."
+"You bastard..."
+
+Son O-cheon questioned him with a serious face.
+
+"Tell me the truth. Oknodie is your child, isn't she?"
+"...What nonsense are you suddenly spouting?"
+"How could you say something like that if she's not your child?"
+"She's been on my mind since before the entrance exam."
+"What about the little mouse caught your attention?"
+"Her lack of childlikeness... I would say."
+
+Not all children live in a happy world.
+There are plenty of laborers who are forced to become immature adults before they can be children.
+
+"That youthful face still retains its purity. Like an essence that cannot be erased no matter how twisted or suppressed."
+"Hmm."
+"Our little lady deserves a smiling face. I don't want to see shadows cast over that smile... Didn't the three of us make that pledge?"
+
+Isabel also sympathized with Gisele's feelings.
+
+"That's right. Oknodie doesn't express her emotions clearly. She easily shows positive emotions but doesn't even recognize negative ones as bad. Like someone with broken value judgment."
+"The little mouse isn't 'like' that—she's already broken."
+"Anyway. I understand why Gisele is reacting sensitively. If we don't approach her first, we'll never know if something happens to Oknodie."
+
+The three were in agreement.
+
+"Let's go to Oknodie's dormitory room."
+
+From there, they would work backward to find clues.
+Where Oknodie might be now.
+What kind of trouble she might be in.
+
+"A student unable to attend lectures... In that case, I understand. I'll give you the spare key to room 111 kept in the supervisor's office."
+
+The dormitory supervisor willingly handed over the key.
+The three entered Oknodie's room.
+
+"Oknodie...?"
+
+The three who entered the room discovered Oknodie writhing in bed, sweating profusely.
+
+
+* * *
+
+
+"This nightmare is seriously crossing the line."
+
+The high-level Death Experience Curse that I started with the casual intention of building resistance while sleeping at night.
+With each increase in difficulty, new gimmicks were added, including some truly maddening ones.
+Following the "Intimacy Adjustment" gimmick came the "Consecutive Clear" gimmick.
+I was cursed to remain asleep until I cleared an unknown number of consecutive nightmares from beginning to end.

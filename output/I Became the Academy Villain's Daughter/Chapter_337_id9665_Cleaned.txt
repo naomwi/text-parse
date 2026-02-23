@@ -1,0 +1,179 @@
+# 337 - A Test Where Survival Is All That Matters
+
+Jaidas insisted on the goal of allied victory, but that was a foolish thought that missed the essence of the test.
+Should I say he made the common rookie mistake of misunderstanding the passing conditions?
+
+Winning on the battlefield.
+Defending the fortress until the main force arrives.
+These are objectives presented by the commander-in-chief, not the conditions for passing the test.
+
+In short, they're what's called "challenge tasks."
+Elements that give bonus points if achieved.
+Even if you accomplish the challenge tasks, it means nothing if you die in the process.
+
+The title of this lecture is <Surviving as a Commander on the Battlefield>.
+Survival is the top priority.
+Also, you must not lose your position as a <commander>.
+You must maintain a minimum number of troops to keep your title and command them.
+These are the conditions to keep in mind for the turn-based war simulation strategy test.
+If you understand these basics, the range of strategies you can employ becomes much wider.
+
+"Hestia is indeed smart, as expected of an active mercenary!"
+
+Unlike Jaidas, the honor-focused holy knight who insisted on an honorable victory, Hestia, despite having the berserker class, avoided death on the battlefield like a ghost avoiding fatal situations.
+You should only fight battles worth fighting. On a chaotic battlefield like this, fighting recklessly at any time would be disastrous.
+If enemies all swarm you while allies just wait until you fall to claim the credit, how could you live with such injustice?
+
+━━━
+【Turn 1 Start】
+━━━
+[Battlefield Briefing]
+Baron Triton, commander of the regular infantry unit, has sent his subordinate knight Otto as co-commander to lead the penal unit.
+"Cooperate with Otto and lead the prisoners to block the enemy's advance in the western swamp area."
+(Order deadline: Turn 20)
+You are the warden <Oknodie>, in charge of the prisoners and guards of the penal unit.
+Otto wants to discuss future plans.
+━━━
+Select or input your command for this turn.
+[Move][Station][Scout][Messenger][Observe][Attack][Strategy][Special]
+You selected <Special - Talk with Otto>.
+━━━
+[Special - Talk with Otto]
+Otto conveyed Baron Triton's true intentions.
+"In wartime, even feeding prisoners is a waste, so it doesn't matter if they all die on the battlefield, but if even one enemy crosses the swamp, the heads of the guards and commanders will roll."
+The Baron proposed assigning a few prisoners with several days' worth of food to act as human alarms in the swamp, shouting when they detect enemy approach.
+You've just heard this excessively inhumane scouting method.
+Will you accept this proposal?
+━━━
+
+See?
+Why show loyalty to people like this?
+If they don't even see prisoners as people, why would they treat guards or the warden as humans?
+This is a <trap>.
+If you follow Otto's instructions, you can survive comfortably until turn 20 by sacrificing the prisoners.
+But in the end, once you've outlived your usefulness, you're destined to die either by Otto's hand or Baron Triton's.
+If such cruel troop management becomes known to the world, the commander who would be compromised wouldn't leave any witnesses alive.
+
+'Unless I were his trusted confidant, but since Knight Otto is the one delivering the information, Otto is the confidant, and I'm the one being used!'
+
+A veteran player won't just sit back and take such an unfair event.
+
+━━━
+[Special - Talk with Otto 2]
+Before implementing the proposal, you suggested boosting morale with a grand feast so the prisoners would willingly enter the swamp as scouts.
+Otto frowned at the waste of food but respected your wishes as co-commander and warden, allowing the feast.
+━━━
+[Feast]
+At the feast, Knight Otto gathered prisoners whose bravery he noticed and shared drinks with them.
+They are the prisoners who will soon be abandoned as scouts.
+Will you join Otto in praising these prisoners?
+Or will you choose your own <special method> to enjoy the feast?
+━━━
+
+"Of course, a special method!"
+
+━━━
+[Rebellion]
+You revealed Otto and Baron Triton's plan to trustworthy guards and prisoners.
+Enraged, they expressed their willingness to join the rebellion, following you as their warden.
+While Knight Otto and his followers were drunk, you led the guards and prisoners in an ambush.
+"Urgh, you coward. Ambushing during a feast... Baron Triton won't let you get away with this..."
+Otto and his followers died.
+The penal unit now follows only your command.
+━━━
+
+Moving on to Turn 2.
+I removed all traces of Otto and his followers' bodies and the feast.
+Then I sent a fake message to Baron Triton using Otto's name.
+
+"I held a feast to boost morale and used too much food trying to drive the prisoners into the swamp! Please send supplies!"
+
+Baron Triton clicked his tongue and sent military supplies in Turn 3.
+When I saw the record of the messenger asking where Sir Otto was, I immediately cut the messenger's throat.
+These supplies are mine now!
+I set up an ambush near the swamp with the supplies.
+When Baron Triton grew suspicious about the unreturned messenger and sent someone, my scout brought back a notification that they found only an empty post.
+Before the Baron could approach us, I disguised myself as an enemy scout and attacked the Baron's scouts near the frontline.
+With Baron Triton's eyes cut off from all directions and nervously staying put, now is the chance.
+
+━━━
+【Turn 8】
+━━━
+[Battle Briefing]
+While you've blinded Baron Triton and tied his feet, you approached the peasant conscript unit led by Knight Siso.
+Knight Siso was startled by your appearance.
+"What's going on? How is the penal unit that should be guarding the western swamp here in the central plains? And where is Sir Otto, the co-commander?"
+How will you respond to this straightforward knight who doesn't understand the situation?
+━━━
+Select or input your command for this turn.
+[Move][Station][Scout][Messenger][Observe][Attack][Strategy][Special]
+You selected <Strategy>.
+━━━
+
+"The enemy's high-level forces froze the swamp and a large army descended! Sir Otto died on the frontline, and Baron Triton's main force urgently requests aid, so let's move together!"
+
+━━━
+[Strategy - Deception]
+The straightforward Knight Siso requested to see Baron Triton's written orders.
+Of course, you don't have any.
+What to do?
+Should you stall for time to forge an order?
+Or try to persuade him with words?
+Taking too much time or making a sloppy excuse will arouse Knight Siso's suspicion.
+━━━
+[Strategy - Deception 2]
+Surprisingly, you perfectly forged an official document.
+Have you actually seen Baron Triton's orders somewhere before?
+"The Baron is truly in danger. Let's hurry!"
+The straightforward Knight Siso completely trusts you.
+With the knight's back turned to you... what will you do?
+━━━
+
+"Ambush and kill Siso!"
+
+━━━
+[Strategy - Deception 3]
+Knight Siso died.
+You tell the confused conscripts about the evil plan of Baron Triton's faction to turn the penal unit prisoners into cannon fodder.
+The peasant conscript unit, empathizing with their similar situation, accepted your command.
+━━━
+
+By killing commanders leading similar conscript factions on nearby battlefields one by one and absorbing them, by Turn 11, the enemy's main force began to advance.
+My unit, which started with 1,200 prisoner infantry, has now absorbed 2,200 peasant soldiers, 1,700 slave soldiers, and 1,320 forced conscripts, becoming a large force of 6,420 men.
+With this many troops, even conscripts can't be ignored.
+
+━━━
+【Turn 13】
+━━━
+[Battlefield Briefing]
+Following messages left in the swamp and plains, the enemy commander has personally come with his forces to your station.
+"Warden Oknodie. Are you the one who led a rebellion, bringing conscripts who were unjustly oppressed in their homeland to join our righteous country's forces?"
+You could ambush them with hidden forces blocking their retreat, or simply surrender as is.
+What will you choose?
+━━━
+Select or input your command for this turn.
+[Move][Station][Scout][Messenger][Observe][Attack][Strategy][Special]
+You selected <Special - Display>.
+━━━
+[Special - Display]
+The enemy commander was shocked to see your forces already blocking the retreat path and preparing to ambush from all directions.
+"A trap!?"
+You laughed and replied that it was just a performance to show our usefulness.
+The enemy commander, though blushing, valued you even more highly than before.
+"Impressive strategy. I see now it wasn't because Baron Triton's subordinate knights were inexperienced. I'll report your abilities to my lord without holding back."
+The enemy commander feared your abilities while being wary of you.
+The chance of your value being properly conveyed has increased.
+━━━
+
+Afterward, the flow of battle became one-sided.
+If everyone had worked together to wage a delaying action, they could have easily lasted 30 turns on this battlefield, but because of my unit's active betrayal, the frontline was breached in one go.
+Baron Triton gathered Count Bearvold's units and retreated from the frontline, leaving the fortress isolated and captured.
+Realizing the one-sided tilt of the frontline, Hestia and the Thunder God Church Holy Knight Order withdrew from the battlefield.
+And so the test ended.
+
+"Jaidas is dead. Hestia retreated. The only commander who remained on the frontline until the end was Oknodie. The winner of this match is determined to be Oknodie."
+"This is unfair! Betrayal? Such actions would never be tolerated on the frontline!"
+"Why not? The passing condition for this match wasn't to win honorably but to survive as a commander. Until you understand this difference, you might as well give up on your second semester grades."
+
+As the match ended, rewards poured in.
+Achieving <Traitor's Victory> also earned challenge task rewards!

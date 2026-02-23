@@ -1,0 +1,229 @@
+# <385 - The Book That Kills People>
+
+In "Graduating from the Academy by Luck," there are as many different skill checks as there are functions. Among them, checks related to "magic" or "knowledge" are more notorious than physical ones, because the amount of learning increases dramatically.
+
+'That's why newbies can't use magic!'
+
+Understanding the principles and carefully engraving the formulas makes magic casting easier.
+
+[The formula has been perfectly engraved.]
+[Problem difficulty decreases.]
+[The mana circuit construction is perfect.]
+[Problem difficulty decreases.]
+[The difficulty has dropped to a negligible level.]
+[Problem solving is skipped.]
+
+━━━
+【Magic Missile Casting Problem】
+Question: 1＋1＝ ?
+Answer: ? = 2
+━━━
+
+No one would find this difficult to solve. Even a 3-year-old who's just learning to count could get it right.
+Conversely, what if an inexperienced newbie struggles?
+
+[The formula materials are low-grade.]
+[Problem difficulty increases.]
+[The formula has been engraved terribly.]
+[Problem difficulty increases.]
+[The mana purity is terrible.]
+[Problem difficulty increases.]
+[The mana circuit construction is sloppy.]
+[Problem difficulty increases.]
+[Available mana is insufficient.]
+[Problem difficulty increases.]
+
+━━━
+【Magic Missile Casting Problem】
+Time limit: 5 seconds
+Question: Find the rule that goes in the clover.
+28500♣5＝0
+2850♣4＝2
+285♣3＝0
+28♣2＝0
+2♣1＝0
+Answer: The rule for ♣ is <divide the number before by the number after and find the remainder>.
+━━━
+
+Few ordinary people could quickly solve such problems unless they're college entrance exam students taking a gaming break, college students, math teachers, or people studying for civil service exams.
+The human brain works faster on familiar tasks and slower on unfamiliar ones.
+Some Indian players who are terrible at formulas but mathematical geniuses can solve all problems with their brain power and cast all spells in just one second, but that's not a skill I can imitate.
+
+'Such a person would have become an archmage even if they were born in another world!'
+
+An average veteran player like me can only adjust the difficulty of problem-solving and memorize the patterns of questions and answers.
+What's the difference between that and just solving problems?
+There's obviously a world of difference between getting all the answers right when faced with unknown problems versus only getting right the ones you already know!
+
+'The problem is that just as magic checks become more difficult with more complex spells, knowledge checks become more difficult with more complex knowledge requirements!'
+
+And right now, we're being asked to perform a knowledge check.
+
+【Archaeology Archives】
+[When you successfully complete a knowledge check for the book you wish to borrow, that book will be temporarily ejected from the archives.]
+[However, if you fail the knowledge check, the chance of a completely different book popping out increases.]
+[Caution: According to the library's security protocol, those who fail the knowledge check are considered intruders, and there are many trap books designed to harm readers.]
+
+Seeing the warning notice prominently displayed in front of the archives, Dobi, who desperately needed a fairy tale book, trembled pitifully.
+
+"I can't get this. I've never trained my archaeology skill, so I can't pass the knowledge check..."
+"I've read a lot of books studying for lectures. Can't I use my reading skill for the check?"
+
+Titosoga asked innocently.
+I coolly answered:
+
+"Try it!"
+"...I'll pass."
+
+That's Titosoga for you.
+Like a harmless small animal, he has a good sense for detecting danger.
+On the other hand, some people are brave because they're ignorant.
+
+"You all have less guts than a little mouse. Hahaha! I'll pull out a fairy tale book in one go!"
+
+Son O-cheon confidently placed his hand on the archives.
+A judgment window appeared.
+
+[Think about or enter information about the book you want to borrow on the mana panel.]
+
+━━━
+Input information: Fairy tale book
+Keywords: fairy, anything, many
+━━━
+
+[Executing knowledge check.]
+
+He thought he could just search and borrow a book easily.
+Approaching the system as casually as an electronic library checkout, Son O-cheon was met with an overwhelming amount of judgment text scrolling at terrifying speed, like error codes on a hacked computer.
+
+[The scope of information is too broad.]
+[Judgment difficulty increases.]
+[<Archaeology> knowledge is insufficient.]
+[Judgment difficulty increases.]
+[<Fairy> knowledge is insufficient.]
+[Judgment difficulty increases.]
+[<Legend> knowledge is insufficient.]
+[Judgment difficulty increases.]
+[<Great Monster> knowledge is insufficient.]
+[Judgment difficulty increases.]
+
+"Huh?"
+
+Son O-cheon sensed something was wrong.
+The mana panel under his hand vibrated frighteningly.
+
+━━━
+The ancient and noble fairy tales reject your touch.
+The footprints of fairies mock you as they fly away.
+Traces of legend pull out the forbidden book <The Tragedy of the Fool>.
+Some great monster drools as it adds <Dreagol's Leather Book>.
+━━━
+
+"Huuuh?"
+
+In the blink of an eye, two books were pulled out of the archaeology archives on their own.
+One resembled a photo album with ridiculous green and red jester decorations, while the other was a man-eating book made of monster hide with ominous teeth.
+The photo album opened itself, trying to fill Son O-cheon's soul into its empty photos, while the leather book opened its teeth wide to bite his hand.
+
+[Mental resistance failed.]
+[Strength temporarily reduced.]
+[Killing intent resistance failed.]
+[Strength temporarily reduced.]
+[Hierarchy resistance failed.]
+[Strength temporarily reduced.]
+
+"This is crazy. What's happening to my body? I can't move...!"
+"Okay, that's enough!"
+
+Just before he could suffer a truly terrible fate, I grabbed Son O-cheon's legs and pulled him backward.
+Finally freed from his position with his hand on the archives' mana board, Son O-cheon fell backward and shuddered as he watched the books inside the mana board licking their chops.
+
+"What kind of books are those! Even a professor's trap wouldn't be that dangerous."
+"That's because they're not books meant to be read!"
+"I've had a terrible experience. I'll never touch the library's mana panel again."
+
+Having witnessed Son O-cheon's ordeal up close, the other students became more cautious.
+They maintained proper posture and carefully watched their steps and distance, afraid that even a thread might touch the archives.
+Is etiquette really born from the violence of barbarism?
+
+"Is there anyone else who wants to try getting a fairy tale book?"
+"Hmm. I might be able to help. The education I received from the Sebiche family, once a ducal house, wasn't for nothing."
+"Wow, Sister Arcadia!"
+"That won't be necessary. You're already struggling to revive your fallen family. Don't risk yourself and leave this to me."
+"Wow, Irene!"
+
+As the two had mentioned before, libraries are the domain of the upper class.
+It wouldn't be strange for a duke's daughter and a marquis's daughter to have exclusive libraries in their territories.
+Though not as extensive as the Academy's, they would have facilities familiar enough with knowledge checks.
+
+[Arcadia borrows <Kaharan Desert Mural>.]
+[Irene borrows <Frozen Time>.]
+
+The two successfully obtained their respective fairy tale books from the mana panel.
+
+"I thought you said fairy tales?"
+"Those are fairy tales?"
+
+Everyone's breath caught when, instead of the picture books they expected, what appeared was a mural that looked like it had been torn whole from a wall.
+Irene's was even more bizarre—a large container filled with rainbow-colored water where chaotic colors swirled endlessly.
+
+"By fairy standards, this is a fairy tale. They read the emotional fluctuations engraved in the mural by tracing the three-dimensionally carved images with their hands."
+"This container of swirling <Frozen Time> captures the past of even more primitive spirits than those advanced elementals."
+"Great, we got double the results, Dobi!"
+
+Dobi, who had obtained the fairy tale books, asked with a not-at-all happy face:
+
+"So when someone asks me to read them a fairy tale, how am I supposed to read these?"
+"With archaeology skill!"
+"But I've never learned archaeology."
+"Elemental language skill!"
+"I've never had any connection with elementals either."
+"Then learn one while we're at the library!"
+
+Actually, the library also has what are called <Skill Books>.
+When opened, they allow you to learn skills you haven't acquired yet, or significantly increase the experience of skills you already have.
+I quickly searched through the mana panel, found a skill book, and handed it over. Dobi asked with a dazed expression:
+
+"How did you find a skill book in one second? Did you know about this from the beginning...?"
+
+Jaku approached the confused Dobi, put his arm around his shoulder, and whispered in a low voice:
+
+"Haven't you noticed?"
+"!?"
+"If Oknodie gives you supplies from the Foundation, just shut up and take it. Don't draw unnecessary attention."
+
+Is it really right to be tied to the Foundation just to avoid being killed by elementals? Dobi sighed with mixed feelings as he accepted the skill book.
+
+[You have no knowledge related to skills.]
+[Acquisition time increases.]
+[Intelligence check failed.]
+[Pain during acquisition increases.]
+[A fragment of talent is visible.]
+[Your lifespan will not be reduced.]
+
+"Aaaaargh!!!"
+
+Dobi, while holding the skill book, suddenly let out a terrible scream and convulsed.
+Son O-cheon, startled by Dobi's suffering as if he had opened a forbidden book, shouted:
+
+"Is he opening a trap book like the one I almost opened?"
+"No, skill books are normally like that!"
+"What kind of skill book is designed to kill people?"
+"They say treasures choose their owners. If someone without ability gets greedy, they should expect this much pain!"
+"But you're the one who told him to read it, you heartless little mouse..."
+
+[Dobi acquires the Elemental Language skill.]
+
+Great! Now Dobi doesn't have to worry about being assassinated by elementals who visit in the middle of the night!
+
+"We've accomplished our purpose at the library, but does anyone want to borrow a book before we leave? I could even find a skill book for each of you if you want!"
+
+The students who had come all this way together, overwhelmed with assignments, shook their heads.
+What strange newbies, not needing reference books for their lectures!
+
+"Oh right. Dobi. Give the books back now!"
+"What?! We came to borrow books. Why do I have to return them already?"
+"If the elementals don't return the books Arcadia and Irene borrowed, they'll have to pay late fees and get really angry. But if you're okay with that, you can keep them!"
+"..."
+
+Dobi, sniffling, returned the not-really-books.

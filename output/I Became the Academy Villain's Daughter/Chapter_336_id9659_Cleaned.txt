@@ -1,0 +1,223 @@
+# 336 - Ragtag Army
+
+Jaidas thought Oknodie had played a shallow trick.
+
+'Being the top student of the year, she probably wanted to show off some genius strategy.'
+
+The same went for Hestia.
+
+'She probably planned to steal the Falcon Cavalry, which would have the best synergy with Jaidas the Holy Knight, from the two remaining cushy positions.'
+
+But handing over the Border Guard was a huge mistake.
+
+'The true value of a Holy Knight isn't in charging and destructive power. Rather, siege defense is our specialty.'
+
+Strong offensive power combined with heavy armor and self-healing for maintaining the frontline, plus divine skills to boost troop morale—there was no area where they weren't helpful.
+These versatile characteristics were precisely why the Holy Knight class was considered and revered as the best class.
+As long as he was determined to hold out, the Border Guard stationed at the fortress would never be breached.
+
+━━━
+【Turn 1 Start】
+━━━
+[Battlefield Briefing]
+A messenger from the main force has delivered orders from the Commander-in-Chief <Gracio>.
+"Cooperate with the units around the fortress to delay the enemy's advance as much as possible. Once the enemy crosses the river, hole up in the fortress and focus solely on defense."
+(Order valid until Turn 30)
+You are <Jaidas>, the captain of the Border Guard.
+The Border Guard awaits your orders.
+━━━
+Select or input your command for this turn.
+[Move][Garrison][Scout][Messenger][Observe][Attack][Strategy][Special]
+You have selected <Messenger>.
+━━━
+
+Jaidas already had a foolproof strategy in mind.
+Occupy just enough vision around the fortress to prevent it from falling and slow the enemy's advance.
+No need for clever tricks or petty schemes—just following the straightforward path would be safest for him.
+Simply staying alive would essentially fulfill the main force's directive, so he would survive until the end.
+
+"I'll send a [Messenger]."
+
+He would actively use his advantages.
+The target of his messenger was Oknodie's Penal Battalion.
+
+"I'm assigning Oknodie's Penal Battalion the role of search party until they locate the enemy forces!"
+
+The small dot representing the messenger scurried across the map toward Oknodie's position.
+
+'I'll communicate with other units through messengers as well, just gathering information.'
+
+"Booo."
+"Jaidas is such a coward."
+"He gets the cushiest position in the back and all he thinks about is ordering other units around. Why did Oknodie let Jaidas choose such a sweet position?"
+"Exactly."
+"What a foolish choice. Is Oknodie not that knowledgeable about military strategy after all?"
+
+The other first-year students taking the <Surviving as a Commander on the Battlefield> course jeered at Jaidas, anticipating his overwhelming advantage.
+
+"Call me opportunistic if you want. This is still the best strategy."
+
+Even the students had to admit it.
+If they were in Jaidas's position, they wouldn't have employed a different strategy either.
+
+━━━
+【Turn 4 Start】
+━━━
+[Battlefield Briefing]
+A messenger who made contact with the Regular Infantry has returned.
+"The Regular Infantry will defend the Eastern Valley."
+A messenger who made contact with the Conscripted Peasant Unit has returned.
+"Our unit lacks the training to conduct reconnaissance."
+...
+A messenger who made contact with the Falcon Cavalry has returned.
+"We will continue our ambush operation."
+A messenger who made contact with the Thunder God Church Holy Knight Order has returned.
+"We only take orders from God."
+...
+The messenger sent to the Penal Battalion has not returned.
+Something seems to have gone wrong.
+━━━
+
+But what was this?
+Not a single unit properly cooperated with his request for reconnaissance.
+Worse yet, there was no word from the messenger sent to Oknodie!
+Things were starting to go wrong.
+Jaidas had a sinking feeling.
+
+'I can understand Oknodie and Hestia being uncooperative. We're competing to see who can survive longer.'
+
+But the fact that other units weren't following instructions was a very ominous sign.
+
+'Could it be... that this battlefield is a chaotic mess of nobles pursuing their own interests, just like in real life?'
+
+━━━
+Select or input your command for this turn.
+[Move][Garrison][Scout][Messenger][Observe][Attack][Strategy][Special]
+You have selected <Observe>.
+━━━
+[Observation Results]
+The observation targets are the commanders of each unit.
+Information is provided immediately based on your existing knowledge.
+Conscripted Peasant Unit Commander: Knight Siso (belonging to Baron Triton)
+Regular Infantry Commander: Baron Triton (belonging to Count Bearvold)
+...
+Falcon Cavalry: Berserker Hestia (mercenary unit)
+Otos Penal Battalion: Knight Otos, Head Jailer Oknodie (belonging to Baron Triton)
+Border Guard: Holy Knight Jaidas (belonging to Commander-in-Chief Gracio)
+...
+Thunder God Church Holy Knight Order: Order Commander Bryunack (belonging to Thunder God Church)
+━━━
+
+He had assumed they were all allies in the same faction, but each unit had different affiliations.
+Apart from Jaidas himself, who belonged to Commander-in-Chief Gracio of the Blue Army, everyone else had different allegiances.
+
+The regular army, including the Regular Infantry under Baron Triton who took orders from Count Bearvold.
+Conscripted forces like the Peasant Unit and Penal Battalion led by knights dispatched by Baron Triton.
+Independent forces with their own affiliations, like the Thunder God Church Holy Knight Order and the Falcon Cavalry.
+
+Jaidas recalled the most miserable battle in his memory.
+A territorial war where four baronies rose up against a single large county's exploitation.
+Jaidas had joined the battlefield believing the allied forces had the upper hand, but he faced a deadly crisis against the county's forces, which were clearly at a disadvantage.
+
+'All the baronies dreamed of monopolizing the post-war spoils and failed to cooperate properly.'
+
+The unit in charge of logistics didn't send supplies.
+The strongest barony fighting on the frontline retreated due to lack of food.
+Two other baronies, initially in cahoots with the logistics barony, belatedly opened the path for enemy forces, using the failure to send supplies on time as an excuse.
+The barony guarding the food storage was invaded by the enemy's main force and burned down instantly.
+The remaining two baronies seized the opportunity and launched reverse fire attacks that burned their own allies as well.
+Jaidas was caught in that chaos.
+
+-Avoid friendly fire arrows! Stay by the water source and protect your armor and surrounding ground with water!
+-The enemy is surrounded by our forces. If we hold out a little longer... No, what are those bastards doing? Where are they going? The enemy is right here!
+
+But soldiers from one section of the encirclement deserted.
+Some fool had left to capture the count's island in the midst of the chaotic battle.
+The barony fighting alone against the county's army was defeated, and the barony that occupied the count's island soon followed in defeat.
+Jaidas barely escaped with his life from this terrible civil strife. He realized that at his current level, he couldn't survive such treacherous battlefields.
+He sought out the Gift Academy, which led him to the current test.
+
+"How cowardly, Professor Rare Grills. Making us stand on such a shameful battlefield!"
+
+Through observation and information exchange via messengers, Jaidas understood the specific reasons why his orders weren't being followed.
+As expected, the cause was vested interests.
+Even if they won this war, all the credit for the border region would go to Commander-in-Chief Gracio.
+Count Bearvold and his follower Baron Triton, who provided over 70% of the frontline forces, had nothing to gain.
+The mercenaries and the Thunder God Church, who had put their name on the line, were watching cautiously between the factions of the Commander-in-Chief and Count Bearvold.
+
+-We cannot allow the church's precious lambs to become sacrificial lambs by acting rashly when the chain of command is not clearly unified.
+
+With such chaos among supposed allies, there was no way this could be a proper war.
+No matter how hard Jaidas tried, he was isolated, and his concerns became reality when the enemy appeared.
+
+━━━
+【Turn 11 Start】
+━━━
+[Combat Briefing]
+The enemy has begun advancing simultaneously from two directions: the Eastern Gorge and the Central Plains.
+There is still no word from the Penal Battalion and Village Militia assigned to the Western Swamp area.
+To protect the fortress as per Commander-in-Chief Gracio's instructions, you must delay the advance from at least one direction.
+However, considering the unstable command structure of our forces, there's a possibility that the enemy could break through the front line and advance to the fortress in one go if you leave your position.
+━━━
+
+"Damn it. If I hadn't known this information, I might have been able to take action."
+
+His experience of wandering through the line of death filled Jaidas with fear.
+He wasn't afraid of dying in honorable combat against the enemy.
+He was even willing to accept his inadequacy as a commander if defeat came from his lack of strategic ability.
+That's why he came to the Academy—to learn what he lacked.
+Recognizing his own shortcomings wasn't frightening.
+
+'But this is just wrong.'
+
+Jaidas recalled the alliance of four barons he had last experienced.
+He had no desire to suffer again the calamity of being caught up with groups all dreaming different dreams.
+
+━━━
+[Garrison]
+You have decided to defend the fortress.
+The Border Guard is skeptical of your decision.
+Decide whether to tell them the truth about the conflicts between each unit or demand silence and obedience.
+━━━
+
+Jaidas preferred rational choices.
+The soldiers had a right to know why they needed to remain at the fortress.
+
+━━━
+[Morale Drop]
+The soldiers have learned the truth.
+The Border Guard's morale has significantly dropped due to disappointment with the uncooperative allied units and pessimism about being unable to leave the fortress.
+While trust and loyalty to you as commander remains, the drop in unit morale will greatly affect combat effectiveness.
+━━━
+
+"Damn it. What am I supposed to do then!"
+
+The defensive forces in each area were eventually breached one after another.
+The markers for Hestia's cavalry and Oknodie's penal battalion completely vanished from the tactical map.
+In the end, there was nothing Jaidas could do until the fortress fell and the Border Guard was annihilated.
+Still, if the fortress was conquered, everywhere else must have been defeated too.
+
+"I'm the last one, right?"
+"No. You're the first to be eliminated."
+
+This would be impossible in a normal engagement.
+Jaidas realized his ominous premonition had become reality.
+
+"Cowards. Making us lose a war we could have won just to survive!"
+"Eliminated participants should observe the status of the remaining participants."
+
+Even without the instruction from teaching assistant Gracio, who played the role of the allied commander-in-chief, Jaidas was dying of curiosity.
+Where on earth were those people who never showed their faces even as the fortress fell, and what were they doing?
+
+"Ah."
+
+Hestia's cavalry never even deployed, instead retreating to the rear.
+She had adopted a survival-first strategy.
+Oknodie went even further.
+When Jaidas saw her screen, he let out a deep sigh.
+
+"The marker... it's the enemy's color."
+
+Knight Otos, the co-commander who had been leading the unit, was nowhere to be seen, and Oknodie had become the sole commander. She was leading the Penal Battalion, now three times larger, advancing—
+Toward the retreat path of the remaining allied forces, alongside the enemy.
+This girl had, absurdly, committed betrayal.

@@ -1,0 +1,167 @@
+# 9 - Can't Resist Rare Food
+
+Senior Examiner Michael.
+A beautiful nobleman with long blonde hair.
+Michael, a handsome man with androgynous charm, sat down at his designated seat at the bar table, seemingly oblivious to the stares of the examinees watching him.
+
+"Is the honey wine still far off?"
+"The honey stock hasn't arrived yet. What a shame. You'll have to wait about two days until the beekeepers' stock arrives."
+"Didn't you say the same thing two days ago? This truly is a worthless backwater not worth waiting for."
+
+After staying in his seat for 10 minutes and emptying a moderate drink, he goes upstairs.
+After 50 minutes pass, he comes back down to the first floor and sits in his designated seat again.
+
+"Is the five-colored shaved ice still far off?"
+"The ice stock hasn't arrived yet. What a shame. You'll have to wait between three days and a week until the ice merchants' stock arrives."
+"Didn't you say the same thing three days ago? This truly is a worthless backwater not worth waiting for."
+
+A conversation identical to the one they had earlier, as if they were just inserting different menu names into predetermined lines.
+I couldn't help but laugh at this dizzying conversation that reminded me of repetitive NPC dialogue I'd only seen in games.
+When I saw it in games, I didn't think much of it, but in reality, it looks so bizarre.
+
+"What do you think, my lady? It seems the examiner has already presented the problem."
+
+As if to drive home the butler's point, an event notification appears.
+
+<Michael's Ticket Exam Event>
+The ticket exam has already begun!
+Michael and the innkeeper repeat a conversation every hour, mentioning different menu items and claiming they're out of stock.
+Find hints from these mysterious conversations to pass the ticket exam.
+
+While listening to the bard strumming his instrument, Jonna asked again.
+
+"Are you sure it's alright to just stay like this?"
+"Don't worry. I have a plan."
+
+If game strategies work here, passing the ticket exam would be no problem.
+My confident demeanor must have looked quite concerning to others, as someone from the next table suddenly spoke up.
+
+"Haha! The little lady is putting her brain to work."
+"...That's not a nice thing to say, you know?"
+"Yikes. The lady seems to be in a bad mood."
+
+The man gave me a hint.
+
+"Let me give you a little tip. This exam is a first-come-first-served material gathering test where you climb Mt. Shinjeong to find the missing ingredients the examiner mentioned."
+"Hmm. Is that so?"
+"You heard the innkeeper mention how many days it would take for stock to arrive, right? That refers to the elevation level where you can obtain the ingredient. Within 1000m elevation, within 2000m, things like that."
+
+The honey needed for honey wine is an item obtained within the 2nd tier, below 2000m elevation.
+The ice needed for five-colored shaved ice is an item obtained between the 3rd and 7th tiers, between 2000m and 7000m elevation.
+All information I already know.
+
+'In the game, the conversation would automatically advance by one hour each time you clicked the "Next" button.'
+
+A random ticket exam where you just keep clicking the "Next" button until a doable quest appears.
+If you're unlucky, only requirements that are impossible to clear with your current specs will appear, leading to jokes about how this crazy guy has so many dishes he wants to eat.
+I vividly remember the meme of a fat Michael who gained 100kg after eating all the food he demanded.
+
+"The sap of the thorny vine monster from the 4th tier, huh? If I kill it, will you give me a plate of food too?"
+
+The monkey beastman I saw outside poked his head down from above to look at Michael.
+Michael's bored expression didn't change at all, only his eyeballs following the beastman.
+
+"If the quantity is sufficient."
+"I'll be right back."
+
+At the innkeeper's words, the monkey beastman excitedly ran outside.
+
+"Is that guy going without forming a party?"
+"Ignorant monkey."
+"The 4th tier? He must have a death wish."
+
+Most adventurers target items growing at the entrance and middle of the 2nd tier.
+There are plenty who stubbornly wait for just that one rare item that occasionally appears.
+Some form parties of three or four to target the deep end of the 2nd tier or the entrance and middle of the 3rd tier, but nobody targets the 4th tier and beyond.
+
+'Without the right level, gathering is usually impossible.'
+
+No one takes responsibility if you die during the exam.
+The price of greed is death.
+Climbing a mountain in a game world where monsters actually exist is that dangerous.
+
+"What ingredient are you aiming for, my lady?"
+"Hm? I'm not particularly aiming for anything."
+"Have you given up on the exam?"
+"There's no reason to assume there's only one way to pass the exam, is there?"
+
+The man next to me lit up.
+
+"Indeed, my eyes weren't wrong. I thought the little lady would be targeting something different from all the cowards in this inn."
+"Aren't you a coward too, mister?"
+"Haha. I don't know if you'll be satisfied, but I've prepared in my own way."
+
+Two days later.
+We could see what the man's answer was.
+
+"Wow, what an enormous procession of carts!"
+"Did someone call for a merchant guild?"
+
+When the man whistled sharply, merchants wearing turbans presented their ledgers.
+
+"We've procured all the items you requested."
+"Good. You've had a long journey, thank you for your efforts. Please have some tea while I check the goods."
+
+At the man's words, more than half of the people at the first-floor tables stood up.
+They all went to inspect the goods loaded on the carts and check their quality.
+The adventurers muttered with dumbfounded expressions.
+
+"My goodness. They were all working together?"
+"There must be over twenty of them."
+"I remember now! That annoyingly handsome beard. It's Gisele the Jack-of-all-trades who's been making a name for himself lately!"
+
+Gisele had responded to the exam in a very clever way.
+
+"Now, please exchange tickets for the items we can make with our goods."
+
+The innkeeper turned to Michael with a bewildered face.
+He couldn't judge whether this should count as a pass by his own discretion.
+Senior Examiner Michael, with a slightly less bored expression, compared the menu and the ledger.
+
+"Chocolate balls, Sparkling pasta, Honey wine, and 29 other menu items achieved. This is the first time in my five years as an examiner that a participant has earned 32 tickets at once."
+"Haha. If your brain is lacking, your body suffers, doesn't it? This is just reaping the rewards of using my brain more diligently than others."
+
+Gisele the Jack-of-all-trades.
+He really obtained 32 tickets in one go.
+
+"Wow, amazing."
+"What do you think, little lady? You seem to have plenty of money, and I happen to have plenty of tickets. Since you're wealthy, would you be interested in buying some tickets?"
+"Are you a ticket hunter too, mister?"
+"Haha. As you can see, I suppose I am. It wasn't easy collecting all types of monster materials and ingredients that can be gathered from the mountain. Most became waste, but thanks to that, I obtained a large number of tickets."
+"That's impressive. How much money did you spend?"
+"About 40 gold coins. In return, I plan to sell Bronze tickets for 10 gold coins each and Silver tickets for 100 gold coins each, so it's more than profitable."
+
+Tickets sold for 10 gold coins and 100 gold coins.
+Those units were very familiar to me.
+
+'The ticket black market merchant from the game!'
+
+What was just an NPC black market merchant selling rescue items for players short on time in the game has been implemented like this in reality.
+The identity of the black market merchant selling large quantities of tickets is none other than Gisele the Jack-of-all-trades!
+If you ask how I didn't recognize the black market merchant, I do have an excuse.
+
+-Kukuk. Those who wish to become Academy freshmen, come to me...
+-At our branch, we'll give you a 10% discount on ticket prices if you just gut one person...
+-Hey you there, you have the look of someone who'll become an Academy freshman... Won't you buy this ticket for 10 gold?
+
+The ticket black market merchants in the game were idiots who wore dark hoods in shadowy back alleys late at night, spouting nonsense like this.
+How could I think someone walking around in broad daylight without a hood was a black market merchant!
+
+"He's quite a resourceful merchant. What will you do, my lady?"
+"I'll give you 10 gold coins."
+
+At the butler's words, I promptly took out 10 gold coins from my pocket.
+Gisele spoke with a disappointed expression.
+
+"Just a Bronze ticket? Since you have plenty of money, why not go big with 100 coins? There's always a reason why things are expensive."
+"That's fine. What I want to buy isn't that Bronze ticket anyway."
+
+He passed multiple ticket exam tasks simultaneously.
+As soon as I saw that scene, I thought from the beginning:
+If I'm going to buy something, it should be this.
+
+"What I want to buy is the right to eat the food that will be served after completing the tasks!"
+"Pardon? By meal rights... do you mean you want to purchase the right to eat the food that would be served to us?"
+
+Gisele's eyes widened at this unexpected request. He approached the wealthy young lady intending to sell tickets, only to hear something completely unexpected.
+But from a player's perspective, this was definitely more beneficial than any ticket.
