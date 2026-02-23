@@ -1,0 +1,116 @@
+# ===========================
+# GLOSSARY — I Became the Academy Villain's Daughter
+# ===========================
+
+# ─── NHÂN VẬT / CHARACTERS ─────────────────────────────
+# Tên EN → Tên VI | Quan hệ | Xưng hô mặc định
+
+Oknodie → Oknodie | MC, con gái villain | tự xưng: ta/tôi (nội tâm gamer), bị gọi: tiểu thư, cô chủ
+  - Nguồn gốc tên: "Ok no die" = "Không sao, không chết đâu"
+  - Ngoại hình: bé nhỏ, dưới 140cm, tóc vàng, da trắng, ẩn giấu sức mạnh
+
+Sia → Sia | Bạn thuở nhỏ (♀) của MC (kiếp trước) | xưng: cậu/tớ
+
+Jonna Wiheomhae → Jonna Wiheomhae | Quản gia / Butler | xưng: tôi, gọi MC: tiểu thư
+  - Nguồn gốc tên: "Jonna wiheomhae" = "Cực kỳ nguy hiểm" (tiếng Hàn)
+  - Tính cách: mặt lạnh, sát thủ cấp cao, thương hại MC vì hiểu lầm, tsundere
+
+Leape Life → Leape Life | Hầu gái / Maid / Sát thủ | xưng: tôi, gọi MC: tiểu thư
+  - Nguồn gốc tên: "Reaped Life" = "Mạng bị gặt"
+  - Tính cách: vẻ ngoài dịu dàng, bên trong lạnh lùng, hay cho MC kẹo (tẩm thuốc)
+
+Papa / The Master / The Boss → Papa / Chủ nhân | Cha của Oknodie, trùm tổ chức
+  - MC gọi: Papa | Quản gia gọi: Chủ nhân (Boss)
+
+Bard → Bard | Anh chàng hát rong trên xe ngựa | xưng: tôi, gọi MC: cô bé/tiểu thư
+
+Michael → Michael | Giám khảo cấp cao (Senior Examiner) | quý tộc đẹp trai, trung tính
+
+Gisele → Gisele | "Bách nghệ" (Jack-of-all-trades) / Thương nhân vé chợ đen
+
+Monkey Beastkin → Khỉ thú nhân | Thú nhân to lớn 2.3m, râu rậm
+
+# ─── THUẬT NGỮ GAME / GAME TERMS ───────────────────────
+
+Graduating from the Academy by Luck → Tốt Nghiệp Học Viện Nhờ Vận May
+  - Tên game VR mà MC chơi kiếp trước
+
+Rerolling → Reroll / reroll (giữ nguyên)
+DPS → DPS (giữ nguyên)
+Mana → Mana (giữ nguyên)
+
+Stat Stone → Đá Chỉ Số
+  - Nuốt vào để tăng chỉ số ngẫu nhiên
+
+Stat / Ability Score → Chỉ số
+Strength → Sức mạnh
+Stamina → Thể lực
+
+Hiding (skill) → Ẩn nấp
+Stealth (skill) → Tàng hình
+Sense of Balance → Giác quan Thăng bằng
+Night-prowling → Dạ hành
+Poison Identification → Nhận diện Độc
+Poison Resistance → Kháng Độc
+Swordsmanship → Kiếm thuật
+Archery → Cung thuật
+
+Negative Trait → Đặc tính tiêu cực
+  - VD: [Frailty] = [Yếu đuối], [Physically Awkward] = [Vụng về]
+
+Collection / Cooking Book → Bộ sưu tập / Sách Nấu ăn
+Title → Danh hiệu
+Reputation / Fame → Danh tiếng
+
+# ─── HỆ THỐNG / SYSTEM TERMS ───────────────────────────
+
+Tutorial Event → Sự kiện Hướng dẫn
+  - Định dạng: <Tên Sự kiện>
+
+System notification → [Thông báo hệ thống]
+  - Định dạng: [Nội dung thông báo]
+
+Ticket Exam → Kỳ thi Vé (tên gọi tắt của kỳ thi tuyển sinh)
+Entrance Exam → Kỳ thi Tuyển sinh
+Qualification Exam → Kỳ thi Đủ điều kiện
+
+Bronze Ticket → Vé Đồng
+Silver Ticket → Vé Bạc
+
+Random Papa's Letter → Thư của Papa Ngẫu nhiên (sự kiện tutorial)
+
+Guardian → Người giám hộ
+Support Fund → Quỹ hỗ trợ
+Support Item → Vật phẩm hỗ trợ
+
+# ─── ĐỊA ĐIỂM & VẬT PHẨM / LOCATIONS & OBJECTS ───────
+
+Academy / Gift Academy → Học viện / Học viện Gift
+Mt. Shinjeong → Núi Shinjeong (địa điểm thi)
+Garden of the Gods → Vườn của Thần (danh lam)
+Training Ground → Sân tập
+
+Butler-calling Whistle → Còi triệu hồi Quản gia (item SSS)
+Adventurer's Set (F) → Bộ trang bị Phiêu lưu (F)
+Camera (magical device) → Máy ảnh (thiết bị ma thuật)
+
+Capsule → Capsule (thiết bị VR kiếp trước)
+
+# ─── GIỌNG ĐIỆU / TONE TAGS ──────────────────────────
+
+MC nội tâm: gamer thuần túy, lạnh lùng tính toán, vô tình hài hước
+MC lời thoại: ngắn gọn, thẳng thắn, đôi khi childish (do body nhỏ)
+Butler Jonna: nghiêm túc, khô khan, thương hại MC (hiểu lầm)
+Maid Leape: nhẹ nhàng bề ngoài, sát thủ bên trong, lời nói dễ nghe
+System/Event: giọng robotic, formal, hơi mỉa mai
+Người ngoài nhìn MC: kinh ngạc, thương hại, hiểu lầm bi kịch
+
+# ─── QUY TẮC XƯNG HÔ / HONORIFIC RULES ──────────────
+
+- MC tự xưng nội tâm: "tôi" (tùy ngữ cảnh gamer)
+- MC nói với Butler: "Ngài Jonna" 
+- MC nói với Leape: "Leape" hoặc "cô Leape"  
+- Butler gọi MC: "Tiểu thư" (formal)
+- Leape gọi MC: "Tiểu thư" (formal)
+- MC gọi cha: "Papa"
+- Người lạ gọi MC: "cô bé", "tiểu thư"

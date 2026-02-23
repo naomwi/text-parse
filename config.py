@@ -20,14 +20,14 @@ GEMINI_MODEL = "gemini-2.5-flash"
 GEMINI_TRANSLATION_MODEL = "gemini-2.5-pro"
 
 # --- Extraction ---
-MAX_CHAPTERS = 50
+MAX_CHAPTERS = 400
 SCREENSHOT_SEGMENT_HEIGHT = 4000  # px threshold before splitting
 SCREENSHOT_VIEWPORT_HEIGHT = 3000  # px per segment capture
 
 # --- Timing ---
-TRANSLATION_DELAY = 25  # Seconds to wait between chapters to avoid Rate Limits
-MIN_NAV_DELAY = 2.0
-MAX_NAV_DELAY = 3.0
+TRANSLATION_DELAY = 2  # Seconds to wait between chapters to avoid Rate Limits
+MIN_NAV_DELAY = 1.0
+MAX_NAV_DELAY = 2.0
 SCROLL_STEP_PX = 500
 SCROLL_DELAY_MS = 100
 LOADING_TIMEOUT_MS = 15000
@@ -45,7 +45,7 @@ SEL_STICKY_BOTTOM = "div.viewer-bottom"
 SEL_STICKY_HEADER = "div.viewer-header-container"
 
 # --- Browser & Selectors (Main Site) ---
-NOVELPIA_MAIN_URL_PATTERN = "novelpia.com/viewer"
+NOVELPIA_MAIN_URL_PATTERN = "https://novelpia.com/viewer"
 NOVELPIA_SERIES_URL_PATTERN = "novelpia.com/novel/"
 NOVELPIA_API_EPISODE_LIST = "https://novelpia.com/proc/episode_list"
 

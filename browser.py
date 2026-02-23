@@ -191,6 +191,13 @@ def ensure_chrome_debug_ready(
     )
 
 
+async def _safe_handle_dialog(dialog):
+    try:
+        await dialog.dismiss()
+    except Exception as e:
+        logger.debug(f"Ignored dialog error: {e}")
+
+
 async def connect_cdp(endpoint: str = CDP_ENDPOINT) -> tuple[Browser, Page]:
     """Connect to Chrome via CDP and find the Novelpia tab.
 
@@ -210,6 +217,9 @@ async def connect_cdp(endpoint: str = CDP_ENDPOINT) -> tuple[Browser, Page]:
     # Find the Novelpia/Pixiv viewer tab
     for context in browser.contexts:
         for page in context.pages:
+            # Re-attach safe dialog handler to all existing pages
+            page.on("dialog", _safe_handle_dialog)
+            
             if (NOVELPIA_VIEWER_URL_PATTERN in page.url or 
                 NOVELPIA_MAIN_URL_PATTERN in page.url or
                 PIXIV_NOVEL_URL_PATTERN in page.url or
@@ -234,6 +244,7 @@ async def connect_cdp(endpoint: str = CDP_ENDPOINT) -> tuple[Browser, Page]:
     # All tabs are chrome:// — create a new one
     if browser.contexts:
         page = await browser.contexts[0].new_page()
+        page.on("dialog", _safe_handle_dialog)
         logger.warning("No usable tabs found. Created a new tab.")
         return browser, page
 
@@ -267,8 +278,9 @@ async def launch_persistent(
             headless=False,
             channel="chrome",
             timeout=60000,
-            viewport={"width": 1920, "height": 1080},
+            no_viewport=True,
             args=[
+                "--start-maximized",
                 "--disable-blink-features=AutomationControlled",
                 "--disable-extensions",
                 "--no-first-run",
@@ -280,6 +292,12 @@ async def launch_persistent(
         raise
 
     page = context.pages[0] if context.pages else await context.new_page()
+    
+    # Attach handler to all pages in this persistent context
+    for p in context.pages:
+        p.on("dialog", _safe_handle_dialog)
+        
+    context.on("page", lambda p: p.on("dialog", _safe_handle_dialog))
 
     if start_url:
         logger.info(f"Navigating to {start_url}")
@@ -294,7 +312,9 @@ async def launch_persistent(
 
 async def wait_for_page_ready(page: Page) -> None:
     """Wait for the loading indicator to disappear and content to be visible."""
-    
+    if page.is_closed():
+        return
+        
     # Pixiv doesn't use the Novelpia specific loading elements
     if PIXIV_NOVEL_URL_PATTERN in page.url or PIXIV_SERIES_URL_PATTERN in page.url:
         await asyncio.sleep(1) # Just give a brief moment for the page to settle
@@ -304,16 +324,22 @@ async def wait_for_page_ready(page: Page) -> None:
         await page.wait_for_selector(
             SEL_LOADING_VIEW, state="hidden", timeout=LOADING_TIMEOUT_MS
         )
-    except Exception:
-        pass  # loading-view may not exist on this page
+    except Exception as e:
+        logger.debug(f"Loading view wait exception: {e}")
 
     try:
-        selector = SEL_MAIN_NOVEL_DRAWING if NOVELPIA_MAIN_URL_PATTERN in page.url else SEL_VIEWER_CONTENTS
+        # Wait for actual text nodes to render, not just the container
+        if NOVELPIA_MAIN_URL_PATTERN in page.url:
+            selector = SEL_MAIN_FONT_LINE
+        else:
+            selector = ".viewer-contents p, .layer-episode p, #novelpia_viewer p"
+            
         await page.wait_for_selector(
-            selector, state="visible", timeout=LOADING_TIMEOUT_MS
+            selector, state="attached", timeout=LOADING_TIMEOUT_MS
         )
-    except Exception:
-        logger.warning(f"{selector} not visible after timeout, proceeding anyway")
+    except Exception as e:
+        if not page.is_closed():
+            logger.warning(f"Target {selector} not visible after timeout, proceeding anyway")
 
     await asyncio.sleep(0.5)
 
@@ -407,25 +433,48 @@ async def get_chapter_info(page: Page) -> dict:
             if match:
                 info["episode_no"] = match.group(1)
 
-            # 2. Next episode ID from input containing the current URL pattern
-            # Novelpia main uses inputs like <input type="hidden" value="/viewer/1114460">
+            # 2. Next episode ID from exact hidden inputs
+            # Novelpia main uses <input type="hidden" id="next_epi_auto_url" value="/viewer/1114460">
             next_input = await page.evaluate(r"""() => {
-                // Find all inputs that start with /viewer/ and return the first one that is NOT the current episode
+                const nextUrlInput = document.getElementById('next_epi_auto_url');
+                if (nextUrlInput && nextUrlInput.value && nextUrlInput.value.includes('/viewer/')) {
+                    const nextId = nextUrlInput.value.split('/').pop();
+                    if (nextId !== '0') return nextId;
+                }
+                
+                const nextNoInput = document.getElementById('content_no_next');
+                if (nextNoInput && nextNoInput.value) {
+                    const nextId = nextNoInput.value;
+                    if (nextId !== '0') return nextId;
+                }
+                
+                // Fallback: find any input containing 'next' and '/viewer/'
                 const inputs = Array.from(document.querySelectorAll('input[type="hidden"]'));
                 for (const input of inputs) {
-                    const val = input.value;
-                    if (val && val.startsWith('/viewer/')) {
+                    const id = input.id || '';
+                    const val = input.value || '';
+                    if (val.startsWith('/viewer/') && id.includes('next')) {
                         const nextId = val.split('/').pop();
-                        // Assuming current ID is elsewhere in the DOM or URL
-                        const currentId = window.location.pathname.split('/').pop();
-                        if (nextId && nextId !== currentId) {
-                            return nextId;
+                        if (nextId !== '0') return nextId;
+                    }
+                }
+                
+                // Absolute fallback: Find all inputs that start with /viewer/ and return the LAST one 
+                // that is NOT the current episode (usually Prev is first, Next is last)
+                let lastValid = null;
+                const currentId = window.location.pathname.split('/').pop();
+                for (const input of inputs) {
+                    const val = input.value || '';
+                    if (val.startsWith('/viewer/')) {
+                        const nextId = val.split('/').pop();
+                        if (nextId && nextId !== currentId && nextId !== '0') {
+                            lastValid = nextId;
                         }
                     }
                 }
-                return null;
+                return lastValid;
             }""")
-            if next_input:
+            if next_input and next_input != "0":
                 info["next_episode_no"] = next_input
 
             # 3. Episode Title
@@ -485,12 +534,16 @@ async def navigate_next_chapter(page: Page) -> bool:
     # Strategy 2: Click the next button
     logger.info("  Pinia state unavailable, trying button click...")
     try:
-        buttons = await page.query_selector_all("div.viewer-bottom div.viewer-btn")
-        if len(buttons) < 2:
-            logger.warning("  Could not find navigation buttons")
-            return False
-
-        next_btn = buttons[-1]  # rightmost button
+        # Check global site specific button first
+        next_btn = await page.query_selector('.next-epi-btn')
+        
+        if not next_btn:
+            # Fallback to main site button
+            buttons = await page.query_selector_all("div.viewer-bottom div.viewer-btn")
+            if len(buttons) < 2:
+                logger.warning("  Could not find navigation buttons")
+                return False
+            next_btn = buttons[-1]  # rightmost button
 
         # Check if disabled
         class_attr = await next_btn.get_attribute("class") or ""
@@ -498,17 +551,64 @@ async def navigate_next_chapter(page: Page) -> bool:
             logger.info("  Next button is disabled — end of available chapters")
             return False
 
-        # Wait for the navigation to trigger
+        # Click the next button
+        # Global Novelpia acts as an SPA. Sometimes the chapter is preloaded so networkidle returns instantly without the URL actually changing.
+        # We need to explicitly check if the URL changes after clicking, AND we must wait for the DOM content to physically change 
+        # because the URL updates before the text is swapped out, causing duplicate extraction.
+        current_url = page.url
+        old_text = await page.evaluate("() => document.body.innerText")
+        
+        fallback_url = None
+        if next_ep:
+            domain = "novelpia.com" if NOVELPIA_MAIN_URL_PATTERN in page.url else "global.novelpia.com"
+            fallback_url = f"https://{domain}/viewer/{next_ep}"
+        
         try:
-            async with page.expect_navigation(wait_until="domcontentloaded", timeout=10000):
-                await next_btn.click()
-            await page.wait_for_load_state("networkidle", timeout=10000)
+            await next_btn.click()
+            
+            # Wait for URL to change (max 5 seconds)
+            start_wait = time.time()
+            url_changed = False
+            while time.time() - start_wait < 5.0:
+                if page.url != current_url:
+                    url_changed = True
+                    break
+                await asyncio.sleep(0.1)
+                
+            if not url_changed:
+                logger.warning(f"  URL did not change after clicking next button. Trying force-click...")
+                await next_btn.evaluate("el => el.click()") # Force click via JS
+                await asyncio.sleep(2)
+                
+                if page.url == current_url and fallback_url:
+                    logger.warning(f"  Force-click failed. Executing hard navigation to Pinia fallback: {fallback_url}")
+                    await page.goto(fallback_url, wait_until="commit", timeout=10000)
+                    url_changed = True
+                
+            # Now wait for the actual DOM text to update (max 10 seconds)
+            logger.debug("  Waiting for DOM content to update...")
+            dom_wait_start = time.time()
+            while time.time() - dom_wait_start < 10.0:
+                new_text = await page.evaluate("() => document.body.innerText")
+                if new_text != old_text:
+                    logger.debug("  DOM content updated successfully.")
+                    break
+                await asyncio.sleep(0.2)
+                
+            # Wait for new content to settle
+            await page.wait_for_load_state("networkidle", timeout=3000)
         except Exception as e:
-            logger.warning(f"  Wait for navigation state timed out, continuing: {e}")
+            logger.debug(f"  Network idle wait timed out or failed, continuing: {e}")
 
         delay = random.uniform(MIN_NAV_DELAY, MAX_NAV_DELAY)
         await asyncio.sleep(delay)
         await wait_for_page_ready(page)
+        
+        # Double check if we actually moved
+        if page.url == current_url:
+            logger.error("  Failed to navigate: URL remained the same after clicking Next and Fallback.")
+            return False
+            
         return True
 
     except Exception as e:

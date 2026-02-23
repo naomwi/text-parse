@@ -15,6 +15,8 @@ logger = logging.getLogger(__name__)
 
 # ... (EasyOCR and preprocess_image functions remain unchanged) ...
 
+_reader = None
+
 def get_reader():
     global _reader
     if _reader is None:

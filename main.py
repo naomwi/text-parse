@@ -111,7 +111,37 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def save_chapter(output_dir: Path, chapter_id: str, chapter_index: int, title: str, text: str, novel_name: str = None, suffix: str = "_Cleaned.txt") -> Path:
+def get_actual_chapter_number(title: str, text: str, save_dir: Path, fallback_index: int) -> int:
+    """Extract chapter number from title/text or continue from the highest existing file."""
+    # 1. Try from title: "132 - Patrol With Good Intentions" or "Ch.132" or "<0 - Prologue>"
+    match = re.search(r"^(?:[#<\s]*)?(?:Ch\.|Chapter\s*)?(\d+)(?:\s*-|\s*:|\s*$|[^a-zA-Z0-9])", title.strip(), re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+        
+    # 2. Try from first few lines of text
+    lines = text.strip().split('\n')[:5]
+    for line in lines:
+        line = line.strip()
+        # Match "Ch.132", "Chapter 132", "# 132 - Title", "132 - Title", or "<0 - Prologue>"
+        match = re.search(r"^(?:[#<\s]*)?(?:Ch\.|Chapter\s*)?(\d+)(?:\s*-|\s*:|\s*$|[^a-zA-Z0-9])", line, re.IGNORECASE)
+        if match:
+            return int(match.group(1))
+            
+    # 3. If no number found, check directory for highest file
+    if save_dir.exists():
+        highest = 0
+        for f in save_dir.glob("Chapter_*"):
+            m = re.search(r"^Chapter_(\d+)", f.name)
+            if m:
+                highest = max(highest, int(m.group(1)))
+        if highest > 0:
+            return highest + 1
+            
+    # 4. Fallback
+    return fallback_index
+
+
+def save_chapter(output_dir: Path, chapter_id: str, chapter_number: int, title: str, text: str, novel_name: str = None, suffix: str = "_Cleaned.txt") -> Path:
     """Save extracted text to a file. Returns the file path."""
     
     # Create the novel-specific subfolder
@@ -131,7 +161,11 @@ def save_chapter(output_dir: Path, chapter_id: str, chapter_index: int, title: s
     if len(safe_title) > 50:
         safe_title = safe_title[:50]
         
-    filename = f"Chapter_{chapter_index:03d}_{safe_title}_id{chapter_id}{suffix}"
+    if safe_title:
+        filename = f"Chapter_{chapter_number:03d}_{safe_title}_id{chapter_id}{suffix}"
+    else:
+        filename = f"Chapter_{chapter_number:03d}_id{chapter_id}{suffix}"
+        
     filepath = save_dir / filename
     filepath.write_text(text, encoding="utf-8")
     return filepath
@@ -182,12 +216,21 @@ async def extract_single_chapter(page, gemini_client, output_dir: Path, chapter_
         title = chapter_info.get("epi_title", "")
         
         # Try to parse novel name from the <title> tag
-        # Usually Novelpia viewer title is: "0 - 프롤로그 - 악녀로 끝나는 세계 - 웹소설"
         page_title = await page.title()
         parts = page_title.split(" - ")
-        novel_name = parts[-2] if len(parts) >= 3 else f"Novelpia_{chapter_id}"
+        
+        novel_name = f"Novelpia_{chapter_id}"
+        if is_pixiv:
+            # Format: "[Chapter] [Title] | [Author] - pixiv"
+            novel_name = parts[0].strip() if parts else f"Pixiv_{chapter_id}"
+        elif NOVELPIA_MAIN_URL_PATTERN in page.url:
+            # Usually Novelpia viewer title is: "0 - 프롤로그 - 악녀로 끝나는 세계 - 웹소설"
+            novel_name = parts[-2] if len(parts) >= 3 else f"Novelpia_{chapter_id}"
+        else:
+            # Global Novelpia title is: "Novelpia - I Became the Academy Villain's Daughter"
+            novel_name = parts[-1].strip() if len(parts) >= 2 else f"Novelpia_{chapter_id}"
 
-        logger.info(f"Chapter {chapter_index} (ID: {chapter_id}) {title} - Series: {novel_name}")
+        logger.info(f"Chapter {chapter_index} (ID: {chapter_id}) <{title}> - Series: {novel_name}")
 
         # Scroll to trigger lazy loading
         await scroll_to_load_content(page)
@@ -196,11 +239,18 @@ async def extract_single_chapter(page, gemini_client, output_dir: Path, chapter_
         try:
             if NOVELPIA_MAIN_URL_PATTERN in page.url:
                 # Main site extraction (strip hidden <p> tags with base64 tokens)
+                # Pass the reliable title down to the inject script
                 extracted_data = await page.evaluate(f"""() => {{
+                const chapterTitle = {repr(title)};
                 const lines = Array.from(document.querySelectorAll('{SEL_MAIN_FONT_LINE}'));
                 let text = [];
                 let firstLineId = "none";
                 let lastLineId = "none";
+                
+                if (chapterTitle) {{
+                    text.push(chapterTitle);
+                    text.push(''); // blank line under title
+                }}
                 
                 if (lines.length > 0) {{
                     firstLineId = lines[0].getAttribute('data-line') || "none";
@@ -228,16 +278,45 @@ async def extract_single_chapter(page, gemini_client, output_dir: Path, chapter_
                     count: lines.length,
                     first_line: firstLineId,
                     last_line: lastLineId,
-                    text: text.join('\\n')
+                    text: text.join('\\n'),
+                    extracted_title: chapterTitle
                 }};
             }}""")
             
                 raw_text = extracted_data["text"]
-                logger.info(f"  [DEBUG] Found {extracted_data['count']} line elements. First data-line: {extracted_data['first_line']}, Last data-line: {extracted_data['last_line']}")
+                logger.info(f"  [DEBUG] Found {extracted_data['count']} line elements. Title detected: {extracted_data.get('extracted_title', 'None')}")
 
             else:
                 # Global site extraction
-                raw_text = await page.locator(SEL_VIEWER_CONTENTS).inner_text()
+                # Global site uses standard <p> tags usually inside a container like .viewer-contents or #novelpia_viewer
+                extracted_data = await page.evaluate(f"""() => {{
+                const chapterTitle = {repr(title)};
+                // Global Novelpia typically places text in <p> tags inside the main viewer area
+                const pTags = Array.from(document.querySelectorAll('.viewer-contents p, #novelpia_viewer p, .layer-episode p'));
+                let text = [];
+                
+                if (chapterTitle) {{
+                    text.push(chapterTitle);
+                    text.push('');
+                }}
+                
+                if (pTags.length > 0) {{
+                    for (const p of pTags) {{
+                        const lineText = p.innerText.trim();
+                        if (lineText) text.push(lineText);
+                        else text.push('');
+                    }}
+                }} else {{
+                    // Fallback to getting all text from the container if no <p> tags found
+                    let container = document.querySelector('.viewer-contents') || document.querySelector('#novelpia_viewer');
+                    if (container) {{
+                        text.push(container.innerText.trim());
+                    }}
+                }}
+                
+                return text.join('\\n');
+            }}""")
+                raw_text = extracted_data
                 
             logger.info(f"  Directly extracted {len(raw_text)} chars")
         except Exception as e:
@@ -247,6 +326,16 @@ async def extract_single_chapter(page, gemini_client, output_dir: Path, chapter_
     text = ""
     # Only try OCR fallback if NOT Pixiv, since Pixiv API guarantees text if successful
     if not is_pixiv and (not raw_text or len(raw_text.strip()) < 50):
+        # 1. Check for Paywalls / Login prompts
+        is_paywall = await page.evaluate("""() => {
+            const body = document.body.innerText || '';
+            return body.includes('PLUS') && (body.includes('정기 구독') || body.includes('결제'));
+        }""")
+        
+        if is_paywall:
+            logger.error(f"  [PAYWALL] Chapter {chapter_id} is locked behind a PLUS membership or login. Stopping extraction.")
+            return False, novel_name
+            
         logger.warning(f"  Extracted text is too short/empty for chapter {chapter_id}. Falling back to OCR...")
         
         # OCR Fallback
@@ -264,16 +353,17 @@ async def extract_single_chapter(page, gemini_client, output_dir: Path, chapter_
             return False, novel_name
             
     if not text:
-        # Refine with Gemini (Formatting/Cleanup) if direct extraction worked
-        # (For Pixiv, text is already set above to format_pixiv_text, so it bypasses Gemini refine!)
-        if is_pixiv:
-            text = raw_text # Pixiv text is already clean-ish, but format_pixiv_text stripped the brackets
-        else:
-            text = refine_text_gemini(gemini_client, raw_text, GEMINI_MODEL, OCR_PROMPT)
+        # Direct extraction is already clean (Pixiv text is clean, Novelpia JS strips hidden <p> tags)
+        # Bypassing the slow Gemini refinement step to save time/quota.
+        text = raw_text
+
+    # Auto-detect real chapter number to prevent resets on script restart
+    save_dir = output_dir / re.sub(r'[\\/*?:"<>|]', "", novel_name).strip() if novel_name else output_dir
+    actual_chapter_num = get_actual_chapter_number(title, text, save_dir, chapter_index)
 
     # Save English/Cleaned
-    filepath = save_chapter(output_dir, chapter_id, chapter_index, title, text, novel_name=novel_name, suffix="_Cleaned.txt")
-    logger.info(f"  Saved Cleaned Text: {filepath.name} ({len(text)} chars)")
+    filepath = save_chapter(output_dir, chapter_id, actual_chapter_num, title, text, novel_name=novel_name, suffix="_Cleaned.txt")
+    logger.info(f"  Saved Cleaned Text: {filepath.name} ({len(text)} chars) - Parsed #{actual_chapter_num}")
 
     if translate:
         # Translate to Vietnamese (Gemini 1.5 Pro)
@@ -281,13 +371,13 @@ async def extract_single_chapter(page, gemini_client, output_dir: Path, chapter_
         vietnamese_text = translate_text_gemini(gemini_client, text, GEMINI_TRANSLATION_MODEL, TRANSLATION_PROMPT)
         
         # Save Vietnamese Translation
-        viet_filepath = save_chapter(output_dir, chapter_id, chapter_index, title, vietnamese_text, novel_name=novel_name, suffix="_Vietnamese_LN.txt")
+        viet_filepath = save_chapter(output_dir, chapter_id, actual_chapter_num, title, vietnamese_text, novel_name=novel_name, suffix="_Vietnamese_LN.txt")
         logger.info(f"  Saved Vietnamese: {viet_filepath.name}")
 
     # Rate Limit Cool-down
     logger.info(f"  Cooling down for {TRANSLATION_DELAY}s to respect Gemini API limits...")
     await asyncio.sleep(TRANSLATION_DELAY)
-
+    
     return True, novel_name
 
 
@@ -383,11 +473,16 @@ async def main_loop(args: argparse.Namespace) -> None:
         extracted = 0
         for chapter_index in range(1, args.max_chapters + 1):
             try:
-                success = await extract_single_chapter(
+                result = await extract_single_chapter(
                     page, gemini_client, args.output_dir, chapter_index, translate=args.translate
                 )
+                success = result[0] if isinstance(result, tuple) else result
+                
                 if success:
                     extracted += 1
+                else:
+                    logger.info(f"Stopping extraction early due to failed extraction on chapter {chapter_index}.")
+                    break
 
             except Exception as e:
                 error_msg = str(e).lower()
@@ -395,11 +490,14 @@ async def main_loop(args: argparse.Namespace) -> None:
                     logger.warning(f"Gemini rate limit hit. Waiting 60s before retry...")
                     await asyncio.sleep(60)
                     try:
-                        success = await extract_single_chapter(
+                        result = await extract_single_chapter(
                             page, gemini_client, args.output_dir, chapter_index, translate=args.translate
                         )
+                        success = result[0] if isinstance(result, tuple) else result
                         if success:
                             extracted += 1
+                        else:
+                            break
                     except Exception as retry_err:
                         logger.error(f"Retry failed: {retry_err}")
                         break
@@ -467,7 +565,11 @@ async def main_loop(args: argparse.Namespace) -> None:
 
 def main():
     args = parse_args()
-    asyncio.run(main_loop(args))
+    try:
+        asyncio.run(main_loop(args))
+    except KeyboardInterrupt:
+        print("\n\n[INFO] Extraction stopped by user (KeyboardInterrupt).")
+        sys.exit(0)
 
 
 if __name__ == "__main__":
