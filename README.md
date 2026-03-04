@@ -1,5 +1,6 @@
 # AI Novel Extractor & Translator
 
+*[Đọc bằng tiếng Việt (Read in Vietnamese)](README_vi.md)*
 A Python-based desktop application for extracting, cleaning, and automatically translating Light Novels and web serials from popular platforms directly into your native language using Google's Gemini AI.
 
 ## Supported Platforms
